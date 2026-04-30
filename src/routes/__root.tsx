@@ -33,9 +33,13 @@ export const Route = createRootRoute({
       { name: "description", content: "Denis Simon — painter of realistic landscapes and animal portraits in acrylic." },
       { name: "author", content: "Denis Simon" },
       { property: "og:title", content: "Denis Simon — Acrylic Realism" },
-      { property: "og:description", content: "Realistic landscapes and animal portraits in acrylic." },
+      { property: "og:description", content: "Denis Simon — painter of realistic landscapes and animal portraits in acrylic." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "Denis Simon — Acrylic Realism" },
+      { name: "twitter:description", content: "Denis Simon — painter of realistic landscapes and animal portraits in acrylic." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ba4894a8-e1ab-4b3b-b8af-b4c395d118b3/id-preview-c1d4b26c--0a415caf-056c-4e92-8a98-d73be164aa84.lovable.app-1777580734114.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ba4894a8-e1ab-4b3b-b8af-b4c395d118b3/id-preview-c1d4b26c--0a415caf-056c-4e92-8a98-d73be164aa84.lovable.app-1777580734114.png" },
     ],
     links: [
       {
