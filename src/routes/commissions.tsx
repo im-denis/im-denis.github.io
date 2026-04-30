@@ -2,16 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { PageShell } from "@/components/PageShell";
+import { useDocumentMeta } from "@/lib/useDocumentMeta";
 
 export const Route = createFileRoute("/commissions")({
-  head: () => ({
-    meta: [
-      { title: "Commissions — Denis Simon" },
-      { name: "description", content: "Commission a custom acrylic painting — landscape or animal portrait — by Denis Simon." },
-      { property: "og:title", content: "Commissions — Denis Simon" },
-      { property: "og:description", content: "Commission a custom acrylic painting — landscape or animal portrait — by Denis Simon." },
-    ],
-  }),
   component: CommissionsPage,
 });
 
@@ -24,6 +17,10 @@ const steps = [
 ];
 
 function CommissionsPage() {
+  useDocumentMeta({
+    title: "Commissions — Denis Simon",
+    description: "Commission a custom acrylic painting — landscape or animal portrait — by Denis Simon.",
+  });
   const [sent, setSent] = useState(false);
 
   function onSubmit(e: React.FormEvent<HTMLFormElement>) {

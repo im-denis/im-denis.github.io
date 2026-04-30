@@ -2,21 +2,18 @@ import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { PageShell } from "@/components/PageShell";
 import { Gallery } from "@/components/Gallery";
+import { useDocumentMeta } from "@/lib/useDocumentMeta";
 import denisArtist from "@/assets/denis-artist.jpg";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Denis Simon — Acrylic Realism & Nature" },
-      { name: "description", content: "Portfolio of Denis Simon — realistic acrylic landscapes and animal portraits." },
-      { property: "og:title", content: "Denis Simon — Acrylic Realism & Nature" },
-      { property: "og:description", content: "Portfolio of Denis Simon — realistic acrylic landscapes and animal portraits." },
-    ],
-  }),
   component: Index,
 });
 
 function Index() {
+  useDocumentMeta({
+    title: "Denis Simon — Acrylic Realism & Nature",
+    description: "Portfolio of Denis Simon — realistic acrylic landscapes and animal portraits.",
+  });
   return (
     <PageShell>
       {/* Hero: split screen */}
