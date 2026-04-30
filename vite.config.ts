@@ -7,7 +7,7 @@ import { componentTagger } from "lovable-tagger";
 
 // Static SPA build (GitHub Pages). No SSR.
 export default defineConfig(({ mode }) => ({
-  base: "/denis-artist/",
+  // base: "/denis-artist/",
   plugins: [
     TanStackRouterVite({
       target: "react",
