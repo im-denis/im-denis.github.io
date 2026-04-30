@@ -1,17 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { PageShell } from "@/components/PageShell";
+import { useDocumentMeta } from "@/lib/useDocumentMeta";
 import denisArtist from "@/assets/denis-artist.jpg";
 
 export const Route = createFileRoute("/vita")({
-  head: () => ({
-    meta: [
-      { title: "Vita — Denis Simon" },
-      { name: "description", content: "The biography and artistic journey of painter Denis Simon." },
-      { property: "og:title", content: "Vita — Denis Simon" },
-      { property: "og:description", content: "The biography and artistic journey of painter Denis Simon." },
-    ],
-  }),
   component: VitaPage,
 });
 
@@ -25,6 +18,10 @@ const timeline = [
 ];
 
 function VitaPage() {
+  useDocumentMeta({
+    title: "Vita — Denis Simon",
+    description: "The biography and artistic journey of painter Denis Simon.",
+  });
   return (
     <PageShell>
       <section className="px-6 md:px-12 pt-16 md:pt-24 pb-20">
