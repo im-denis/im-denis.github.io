@@ -10,11 +10,17 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as VitaRouteImport } from './routes/vita'
+import { Route as CommissionsRouteImport } from './routes/commissions'
 import { Route as IndexRouteImport } from './routes/index'
 
 const VitaRoute = VitaRouteImport.update({
   id: '/vita',
   path: '/vita',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommissionsRoute = CommissionsRouteImport.update({
+  id: '/commissions',
+  path: '/commissions',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -25,27 +31,31 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/commissions': typeof CommissionsRoute
   '/vita': typeof VitaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/commissions': typeof CommissionsRoute
   '/vita': typeof VitaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/commissions': typeof CommissionsRoute
   '/vita': typeof VitaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/vita'
+  fullPaths: '/' | '/commissions' | '/vita'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/vita'
-  id: '__root__' | '/' | '/vita'
+  to: '/' | '/commissions' | '/vita'
+  id: '__root__' | '/' | '/commissions' | '/vita'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CommissionsRoute: typeof CommissionsRoute
   VitaRoute: typeof VitaRoute
 }
 
@@ -56,6 +66,13 @@ declare module '@tanstack/react-router' {
       path: '/vita'
       fullPath: '/vita'
       preLoaderRoute: typeof VitaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/commissions': {
+      id: '/commissions'
+      path: '/commissions'
+      fullPath: '/commissions'
+      preLoaderRoute: typeof CommissionsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -70,6 +87,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CommissionsRoute: CommissionsRoute,
   VitaRoute: VitaRoute,
 }
 export const routeTree = rootRouteImport
