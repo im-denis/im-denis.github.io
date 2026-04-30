@@ -1,11 +1,11 @@
-import { T as jsxRuntimeExports } from "./worker-entry-CBBvfL1l.js";
-import { P as PageShell, m as motion } from "./PageShell-BbJTdAqC.js";
-import { d as denisArtist } from "./denis-artist-B1aysNzN.js";
+import { T as jsxRuntimeExports } from "./worker-entry-knzF7_7B.js";
+import { P as PageShell, m as motion } from "./PageShell-Cil7sP2v.js";
+import { d as denisArtist } from "./denis-artist-BrXv6OZj.js";
 import "node:events";
 import "node:async_hooks";
 import "node:stream/web";
 import "node:stream";
-import "./router-CocG7-iP.js";
+import "./router-DcC6j76B.js";
 const timeline = [{
   year: "2012",
   text: "First solo exhibition, Munich. Begins working primarily in acrylic on large canvas."

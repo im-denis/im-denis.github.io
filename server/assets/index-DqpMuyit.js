@@ -1,19 +1,19 @@
-import { T as jsxRuntimeExports } from "./worker-entry-CBBvfL1l.js";
-import { m as motion, P as PageShell } from "./PageShell-BbJTdAqC.js";
-import { d as denisArtist } from "./denis-artist-B1aysNzN.js";
+import { T as jsxRuntimeExports } from "./worker-entry-knzF7_7B.js";
+import { m as motion, P as PageShell } from "./PageShell-Cil7sP2v.js";
+import { d as denisArtist } from "./denis-artist-BrXv6OZj.js";
 import "node:events";
 import "node:async_hooks";
 import "node:stream/web";
 import "node:stream";
-import "./router-CocG7-iP.js";
-const artMountains = "/denis-artist/assets/art-mountains-tJCY99KE.jpg";
-const artLion = "/denis-artist/assets/art-lion-Ch2qHLqr.jpg";
-const artHorse = "/denis-artist/assets/art-horse-zCpO3X0p.jpg";
-const artForest = "/denis-artist/assets/art-forest-D46ab6WZ.jpg";
-const artStag = "/denis-artist/assets/art-stag-DfpjcxvS.jpg";
-const artCoast = "/denis-artist/assets/art-coast-b-yEJ1mk.jpg";
-const artFox = "/denis-artist/assets/art-fox-8BTnmDLk.jpg";
-const artPine = "/denis-artist/assets/art-pine-DlcjX3Rb.jpg";
+import "./router-DcC6j76B.js";
+const artMountains = "/assets/art-mountains-tJCY99KE.jpg";
+const artLion = "/assets/art-lion-Ch2qHLqr.jpg";
+const artHorse = "/assets/art-horse-zCpO3X0p.jpg";
+const artForest = "/assets/art-forest-D46ab6WZ.jpg";
+const artStag = "/assets/art-stag-DfpjcxvS.jpg";
+const artCoast = "/assets/art-coast-b-yEJ1mk.jpg";
+const artFox = "/assets/art-fox-8BTnmDLk.jpg";
+const artPine = "/assets/art-pine-DlcjX3Rb.jpg";
 const works = [
   { src: artMountains, title: "Alpine Silence", no: "No. 01", size: "120 × 90 cm", year: "2025", w: 5 },
   { src: artLion, title: "Sovereign", no: "No. 02", size: "80 × 100 cm", year: "2025", w: 3 },
