@@ -6,6 +6,4 @@
 // You can pass additional config via defineConfig({ vite: { ... } }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-export default defineConfig({
-  base: '/denis-artist/', // Must match your GitHub repository name
-});
+export default defineConfig();
