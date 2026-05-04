@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { PageShell } from "@/components/PageShell";
 import { Gallery } from "@/components/Gallery";
 import { useDocumentMeta } from "@/lib/useDocumentMeta";
-import denisArtist from "@/assets/denis-artist.jpg";
+import denisArtist from "@/assets/artist/denis-artist.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -32,11 +32,11 @@ function Index() {
               DENIS<br />SIMON
             </h1>
             <div className="mt-8 md:mt-12 flex flex-wrap items-center gap-x-5 gap-y-2 font-display text-xl md:text-3xl tracking-tight">
-              <span>Paintings</span>
+              <span>High-Fidelity Realism</span>
               <span className="text-muted-foreground">·</span>
-              <span>Realism</span>
+              <span>Landscapes</span>
               <span className="text-muted-foreground">·</span>
-              <span>Nature</span>
+              <span>Animals</span>
             </div>
           </motion.div>
 
