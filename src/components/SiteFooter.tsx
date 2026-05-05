@@ -19,13 +19,13 @@ export function SiteFooter() {
           <div>
             <div className="font-mono-caps text-xs text-muted-foreground mb-3">Follow</div>
             <a href="https://www.instagram.com/denissimon.art/" target="_blank" rel="noopener noreferrer" className="block hover:underline underline-offset-4">Instagram</a>
-            <a href="https://www.etsy.com" target="_blank" rel="noopener noreferrer" className="block hover:underline underline-offset-4">Etsy Shop</a>
           </div>
           <div>
             <div className="font-mono-caps text-xs text-muted-foreground mb-3">Navigate</div>
             <Link to="/" className="block hover:underline underline-offset-4">Work</Link>
             <Link to="/vita" className="block hover:underline underline-offset-4">About</Link>
             <Link to="/commissions" className="block hover:underline underline-offset-4">Commissions</Link>
+            <Link to="/imprint" className="block hover:underline underline-offset-4">Imprint</Link>
           </div>
         </div>
         <div className="mt-16 pt-8 border-t border-border/60 flex flex-col md:flex-row justify-between items-start md:items-center gap-2 text-xs font-mono-caps text-muted-foreground">

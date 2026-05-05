@@ -2,6 +2,7 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import signature from "@/assets/artist/signature.png";
 
 const links = [
   { to: "/", label: "Work" },
@@ -20,8 +21,8 @@ export function SiteNav() {
   return (
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/60">
       <div className="mx-auto max-w-[1600px] px-6 md:px-12 py-5 md:py-7 flex items-center justify-between">
-        <Link to="/" className="font-display text-xl md:text-2xl tracking-tighter leading-none">
-          DENIS<span className="text-muted-foreground">.</span>SIMON
+        <Link to="/" className="h-8 md:h-10 flex items-center">
+          <img src={signature} alt="Denis Simon signature" className="h-full object-contain" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-10">

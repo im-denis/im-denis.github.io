@@ -26,12 +26,12 @@ function Index() {
             className="lg:col-span-7"
           >
             <div className="font-mono-caps text-xs text-muted-foreground mb-6 md:mb-10">
-              Self-taught artist based in Oldenburg, Germany
+              Self-taught artist from Oldenburg, Germany.
             </div>
             <h1 className="font-display text-[18vw] lg:text-[10.5vw] leading-[0.82] tracking-[-0.06em]">
               DENIS<br />SIMON
             </h1>
-            <div className="mt-8 md:mt-12 flex flex-wrap items-center gap-x-5 gap-y-2 font-display text-xl md:text-3xl tracking-tight">
+            <div className="mt-8 md:mt-12 flex flex-nowrap items-center gap-x-5 font-display tracking-tight whitespace-nowrap text-[clamp(0.9rem,3vw,1.9rem)] md:text-[clamp(1.25rem,2vw,2.5rem)]">
               <span>High-Fidelity Realism</span>
               <span className="text-muted-foreground">·</span>
               <span>Landscapes</span>
@@ -62,7 +62,7 @@ function Index() {
       {/* Works index header */}
       <section className="px-6 md:px-12 pb-10 md:pb-16">
         <div className="mx-auto max-w-[1600px] flex items-end justify-between border-t border-border pt-6">
-          <div className="font-mono-caps text-xs text-muted-foreground">Selected Works</div>
+          <div className="font-mono-caps text-xs text-muted-foreground">Latest Works</div>
           {/* <div className="font-mono-caps text-xs text-muted-foreground">Eight Paintings</div> */}
         </div>
       </section>

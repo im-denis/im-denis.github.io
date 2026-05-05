@@ -10,12 +10,18 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as VitaRouteImport } from './routes/vita'
+import { Route as ImprintRouteImport } from './routes/imprint'
 import { Route as CommissionsRouteImport } from './routes/commissions'
 import { Route as IndexRouteImport } from './routes/index'
 
 const VitaRoute = VitaRouteImport.update({
   id: '/vita',
   path: '/vita',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ImprintRoute = ImprintRouteImport.update({
+  id: '/imprint',
+  path: '/imprint',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CommissionsRoute = CommissionsRouteImport.update({
@@ -32,30 +38,34 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/commissions': typeof CommissionsRoute
+  '/imprint': typeof ImprintRoute
   '/vita': typeof VitaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/commissions': typeof CommissionsRoute
+  '/imprint': typeof ImprintRoute
   '/vita': typeof VitaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/commissions': typeof CommissionsRoute
+  '/imprint': typeof ImprintRoute
   '/vita': typeof VitaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/commissions' | '/vita'
+  fullPaths: '/' | '/commissions' | '/imprint' | '/vita'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/commissions' | '/vita'
-  id: '__root__' | '/' | '/commissions' | '/vita'
+  to: '/' | '/commissions' | '/imprint' | '/vita'
+  id: '__root__' | '/' | '/commissions' | '/imprint' | '/vita'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CommissionsRoute: typeof CommissionsRoute
+  ImprintRoute: typeof ImprintRoute
   VitaRoute: typeof VitaRoute
 }
 
@@ -66,6 +76,13 @@ declare module '@tanstack/react-router' {
       path: '/vita'
       fullPath: '/vita'
       preLoaderRoute: typeof VitaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/imprint': {
+      id: '/imprint'
+      path: '/imprint'
+      fullPath: '/imprint'
+      preLoaderRoute: typeof ImprintRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/commissions': {
@@ -88,6 +105,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CommissionsRoute: CommissionsRoute,
+  ImprintRoute: ImprintRoute,
   VitaRoute: VitaRoute,
 }
 export const routeTree = rootRouteImport

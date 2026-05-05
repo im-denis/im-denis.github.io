@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
+
+
 
 /*
  * Design system definition.
@@ -157,10 +160,16 @@
     font-weight: 900;
     letter-spacing: -0.055em;
   }
+
   .font-mono-caps {
     font-family: "JetBrains Mono", ui-monospace, monospace;
     font-feature-settings: "ss02";
     letter-spacing: 0.15em;
     text-transform: uppercase;
+  }
+
+  .font-handwritten {
+    font-family: 'Caveat', sans-serif !important;
+    font-weight: 400;
   }
 }

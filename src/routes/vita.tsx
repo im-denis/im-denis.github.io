@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { PageShell } from "@/components/PageShell";
 import { useDocumentMeta } from "@/lib/useDocumentMeta";
-import denisArtist from "@/assets/artist/denis-artist.jpg";
+import denisArtist from "@/assets/artist/denis-artist-02.jpg";
 
 export const Route = createFileRoute("/vita")({
   component: VitaPage,
@@ -58,7 +58,7 @@ function VitaPage() {
               feelings and a commitment to the truthful representation of nature.
             </motion.p>
             <motion.p initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }}>
-              By day, I work as a IT System Architect. By passion, I paint in my studio in
+              By day, I work as a IT Systems Architect. By passion, I paint in my studio in
               Oldenburg, northern Germany. This balance between analytical problem-solving and
               creative expression defines both my professional and artistic life.
             </motion.p>
