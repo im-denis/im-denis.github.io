@@ -49,7 +49,7 @@ function Index() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-            className="lg:col-span-5 lg:mt-[-10%]"
+            className="lg:col-span-5"
           >
             <div className="relative aspect-[4/5] overflow-hidden bg-muted shadow-[0_40px_100px_-30px_rgba(20,15,10,0.35)]">
               <img
