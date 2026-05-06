@@ -7,7 +7,7 @@ Perspektiv Werkzeug (shift p)
 Zuschneiden (shift c) -> 3:2 oder 4:5
 Ebene -> Ebene auf Bildgröße
 
--- Varnish shimmer entfernen: 
+-- Varnish shimmer entfernen:
 Wähle das Abwedeln/Nachbelichten-Werkzeug (Umschalt + D).
 Stelle in den Werkzeugeinstellungen (unten links) den Typ auf Nachbelichten.
 Setze den Bereich auf Schatten (oder Mitteltöne, wenn Schatten zu aggressiv ist).
@@ -21,4 +21,3 @@ Heilen (H) Unreinheiten entfernen
 
 Farben -> Sättigung (+5-+10)
 PNG Export
-

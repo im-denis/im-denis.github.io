@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { PageShell } from "@/components/PageShell";
 import { Gallery } from "@/components/Gallery";
 import { useDocumentMeta } from "@/lib/useDocumentMeta";
+import { useTranslation } from "react-i18next";
 import denisArtist from "@/assets/artist/denis-artist.jpg";
 
 export const Route = createFileRoute("/")({
@@ -10,9 +11,11 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
+  const { t } = useTranslation();
+
   useDocumentMeta({
-    title: "Denis Simon",
-    description: "Portfolio of Denis Simon — Realistic Landscapes and Animal Portraits.",
+    title: t("home.title"),
+    description: t("home.description"),
   });
   return (
     <PageShell>
@@ -26,17 +29,19 @@ function Index() {
             className="lg:col-span-7"
           >
             <div className="font-mono-caps text-xs text-muted-foreground mb-6 md:mb-10">
-              Self-taught artist from Oldenburg, Germany.
+              {t("home.heroSubtitle")}
             </div>
-            <h1 className="font-display text-[18vw] lg:text-[10.5vw] leading-[0.82] tracking-[-0.06em]">
-              DENIS<br />SIMON
+            <h1 className="mask-artist-name font-display text-[18vw] lg:text-[10.5vw] leading-[0.82] tracking-[-0.06em]">
+              {t("home.heroTitle")}
+              <br />
+              {t("home.heroTitleSecond")}
             </h1>
             <div className="mt-8 md:mt-12 flex flex-nowrap items-center gap-x-5 font-display tracking-tight whitespace-nowrap text-[clamp(0.9rem,3vw,1.9rem)] md:text-[clamp(1.25rem,2vw,2.5rem)]">
-              <span>High-Fidelity Realism</span>
+              <span>{t("home.heroTagline1")}</span>
               <span className="text-muted-foreground">·</span>
-              <span>Landscapes</span>
+              <span>{t("home.heroTagline2")}</span>
               <span className="text-muted-foreground">·</span>
-              <span>Animals</span>
+              <span>{t("home.heroTagline3")}</span>
             </div>
           </motion.div>
 
@@ -44,7 +49,7 @@ function Index() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-            className="lg:col-span-5"
+            className="lg:col-span-5 lg:mt-[-10%]"
           >
             <div className="relative aspect-[4/5] overflow-hidden bg-muted shadow-[0_40px_100px_-30px_rgba(20,15,10,0.35)]">
               <img
@@ -62,8 +67,9 @@ function Index() {
       {/* Works index header */}
       <section className="px-6 md:px-12 pb-10 md:pb-16">
         <div className="mx-auto max-w-[1600px] flex items-end justify-between border-t border-border pt-6">
-          <div className="font-mono-caps text-xs text-muted-foreground">Latest Works</div>
-          {/* <div className="font-mono-caps text-xs text-muted-foreground">Eight Paintings</div> */}
+          <div className="font-mono-caps text-xs text-muted-foreground">
+            {t("home.latestWorks")}
+          </div>
         </div>
       </section>
 

@@ -23,6 +23,11 @@ export function useDocumentMeta({ title, description, ogTitle, ogDescription }: 
     if (title) document.title = title;
     setMeta(`meta[name="description"]`, "name", "description", description);
     setMeta(`meta[property="og:title"]`, "property", "og:title", ogTitle ?? title);
-    setMeta(`meta[property="og:description"]`, "property", "og:description", ogDescription ?? description);
+    setMeta(
+      `meta[property="og:description"]`,
+      "property",
+      "og:description",
+      ogDescription ?? description,
+    );
   }, [title, description, ogTitle, ogDescription]);
 }

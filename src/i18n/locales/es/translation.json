@@ -1,0 +1,124 @@
+{
+  "nav": {
+    "work": "Obras",
+    "about": "Sobre mí",
+    "commissions": "Encargos",
+    "language": "Idioma"
+  },
+  "home": {
+    "title": "Denis Simon",
+    "description": "Portafolio de Denis Simon — Paisajes realistas y retratos de animales.",
+    "heroSubtitle": "Artista autodidacta de Oldenburg, Alemania.",
+    "heroTitle": "DENIS",
+    "heroTitleSecond": "SIMON",
+    "heroTagline1": "Realismo de alta fidelidad",
+    "heroTagline2": "Paisajes",
+    "heroTagline3": "Animales",
+    "latestWorks": "Últimas obras"
+  },
+  "vita": {
+    "title": "Denis Simon",
+    "description": "Biografía y trayectoria artística del pintor Denis Simon.",
+    "aboutLabel": "Sobre mí",
+    "heading": "Un pintor\nde lo cotidiano.",
+    "artistStatement": "Pinto para capturar la belleza que percibo en el mundo: momentos emotivos, la luz natural y esos detalles sutiles que suelen pasar desapercibidos. Durante más de una década, esta pasión ha impulsado mi trabajo; cada lienzo representa un nuevo desafío y una oportunidad para perfeccionar mi técnica.",
+    "biography": "Nacido en Kazajistán y criado en Alemania, el arte ha moldeado mi visión del mundo desde la infancia. De formación autodidacta, he perfeccionado mi técnica tras años de práctica constante. Mi obra abarca diversos estilos, desde paisajes imponentes y composiciones oníricas hasta retratos y arte abstracto, reflejando siempre mis emociones y un compromiso con la esencia de la naturaleza.",
+    "professionalLife": "De día, trabajo como arquitecto de sistemas de TI. Mi verdadera pasión la desarrollo en mi estudio de Oldenburg, en el norte de Alemania. Este equilibrio entre la resolución analítica de problemas y la expresión creativa define tanto mi vida profesional como la artística."
+  },
+  "commissions": {
+    "title": "Denis Simon",
+    "description": "Solicita una pintura acrílica personalizada —paisaje o retrato animal— a Denis Simon.",
+    "label": "Encargos",
+    "heading": "Tu motivo.\nPintado con mimo.",
+    "intro": "Lugares con historia o ese animal que tanto quieres. Cada año acepto un número limitado de encargos privados. Cada obra es un acrílico sobre lienzo, firmado, barnizado y creado para perdurar durante generaciones.",
+    "processLabel": "El proceso",
+    "steps": [
+      {
+        "title": "Contacto",
+        "body": "Todo empieza con una charla. Me hablas del motivo, el lugar y la sensación que buscas. Yo te escucho."
+      },
+      {
+        "title": "Referencias",
+        "body": "Me compartes tus fotografías (propias, a ser posible). Juntos elegimos el enfoque ideal."
+      },
+      {
+        "title": "Propuesta",
+        "body": "Te envío un presupuesto detallado: formato, gama cromática, plazos y precio. No empiezo a pintar hasta que estés de acuerdo."
+      },
+      {
+        "title": "Creación",
+        "body": "El proceso suele durar de seis a doce semanas. Recibirás exactamente dos fotos del progreso para que veas cómo avanza la obra."
+      },
+      {
+        "title": "Entrega",
+        "body": "El lienzo se entrega barnizado, firmado y se envía asegurado a cualquier parte del mundo."
+      }
+    ],
+    "ctaHeading": "Cuéntame tu idea\npara un cuadro.",
+    "ctaText": "Envíame un mensaje con los detalles de tu visión: motivo, referencias, dimensiones y plazos. Te responderé con una propuesta y los siguientes pasos.",
+    "ctaButton": "Enviar consulta →"
+  },
+  "footer": {
+    "heading": "Creemos\nalgo real.",
+    "studio": "Estudio",
+    "studioLocation": "Oldenburg, Alemania",
+    "contact": "Contacto",
+    "follow": "Sígueme",
+    "instagram": "Instagram",
+    "navigate": "Navegación",
+    "imprint": "Aviso legal",
+    "copyright": "© 2026 Denis Simon. Todos los derechos reservados."
+  },
+  "imprint": {
+    "title": "Aviso legal - Denis Simon",
+    "description": "Información legal y de contacto de Denis Simon, artista en Oldenburg, Alemania.",
+    "label": "Legal",
+    "heading": "Aviso legal",
+    "infoTitle": "Información según el § 5 de la DDG",
+    "address": "Denis Simon\nSchumacherhof 2b\n26123 Oldenburg\nAlemania",
+    "contactTitle": "Contacto",
+    "phoneLabel": "Teléfono:",
+    "phone": "+49 (0) 159 06303066",
+    "emailLabel": "Correo electrónico:",
+    "editorialTitle": "Responsable del contenido editorial según el § 18 apdo. 2 del MStV",
+    "disputeTitle": "Resolución de litigios en línea",
+    "disputeText": "La Comisión Europea facilita una plataforma para la resolución de litigios en línea (ODR):",
+    "disputeLink": "https://ec.europa.eu/consumers/odr/",
+    "disputeNote": "Encontrarás mi dirección de correo electrónico más arriba, en la sección de contacto."
+  },
+  "paintings": {
+    "river": "Río",
+    "wineAndPepperStillLife": "Bodegón con vino y pimienta",
+    "boat": "Barca",
+    "flowersAndWindmill": "Flores y molino",
+    "roeBuck": "Corzo",
+    "landscape": "Paisaje",
+    "oldTree": "Árbol centenario",
+    "butterfly": "Mariposa",
+    "forestPath": "Sendero en el bosque",
+    "duckPond": "Estanque de patos",
+    "campfire": "Hoguera",
+    "mountainStream": "Arroyo de montaña",
+    "ram": "Carnero",
+    "redSea": "Mar Rojo",
+    "lavenderField": "Campos de lavanda",
+    "cowboyWithHorses": "Vaquero con caballos",
+    "sunset": "Atardecer",
+    "greatTit": "Carbonero",
+    "lighthouse": "Faro",
+    "cabin": "Cabaña",
+    "strawberryStillLife": "Bodegón con fresas",
+    "cowboyCampfire": "Hoguera nocturna",
+    "house": "Casa",
+    "duckFamily": "Familia de patos",
+    "owl": "Búho",
+    "titus": "Titus",
+    "windmill": "Molino",
+    "mountainLake": "Lago de montaña",
+    "sunsetLake": "Atardecer en el lago",
+    "tree": "Árbol"
+  },
+  "gallery": {
+    "openFullSize": "Ampliar"
+  }
+}

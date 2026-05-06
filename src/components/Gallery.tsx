@@ -1,72 +1,240 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
-import img26 from "@/assets/paintings/26-owl-40x40-2026.jpg";
-import img27 from "@/assets/paintings/27-duck-family-50x40-2026.jpg";
-import img23 from "@/assets/paintings/23-strawberry-stilllife-70x50-2025.jpg";
-import img24 from "@/assets/paintings/24-cowboy-campfire-40x30-2025.jpg";
-import img25 from "@/assets/paintings/25-house-at-ocean-50x40-2025.jpg";
-import img21 from "@/assets/paintings/21-lighthouse-100x70-2023.jpg";
-import img22 from "@/assets/paintings/22-cabin-80x120-2023.jpg";
-import img17 from "@/assets/paintings/17-lavender-field-100x70-2022.png";
-import img18 from "@/assets/paintings/18-cowboy-with-horses-50x70-2022.jpg";
-import img19 from "@/assets/paintings/19-sunset-landscape-30x40-2022.jpg";
-import img20 from "@/assets/paintings/20-bird-40x30-2022.jpg";
-import img05 from "@/assets/paintings/05-deer-70x50-2021.jpg";
-import img06 from "@/assets/paintings/06-landscape-30x40-2021.jpg";
-import img07 from "@/assets/paintings/07-river-24x30-2021.jpg";
-import img08 from "@/assets/paintings/08-old-tree-30x40-2021.jpg";
-import img09 from "@/assets/paintings/09-butterfly-24x30-2021.jpg";
-import img10 from "@/assets/paintings/10-deer-70x50-2021.jpg";
-import img11 from "@/assets/paintings/11-forest-path-40x30-2021.jpg";
-import img12 from "@/assets/paintings/12-duck-pond-40x30-2021.jpg";
-import img13 from "@/assets/paintings/13-campfire-30x40-2021.jpg";
-import img14 from "@/assets/paintings/14-mountain-stream-30x40-2021.jpg";
-import img15 from "@/assets/paintings/15-mountain-goat-30x40-2021.jpg";
-import img16 from "@/assets/paintings/16-red-sea-30x40-2021.jpg";
+import { useTranslation } from "react-i18next";
+
+// --- 2020 ---
 import img01 from "@/assets/paintings/01-river-30x40-2020.jpg";
 import img02 from "@/assets/paintings/02-wine-and-pepper-still-life-100x70-2020.jpg";
 import img03 from "@/assets/paintings/03-boat-40x30-2020.jpg";
 import img04 from "@/assets/paintings/04-flowers-and-windmill-100x70-2020.jpg";
 
+// --- 2021 ---
+import img05 from "@/assets/paintings/05-rehbock-70x50-2021.jpg";
+import img06 from "@/assets/paintings/06-landscape-30x40-2021.jpg";
+import img07 from "@/assets/paintings/07-river-24x30-2021.jpg";
+import img08 from "@/assets/paintings/08-old-tree-30x40-2021.jpg";
+import img09 from "@/assets/paintings/09-butterfly-24x30-2021.jpg";
+import img10 from "@/assets/paintings/10-rehbock-70x50-2021.jpg";
+import img11 from "@/assets/paintings/11-forest-path-40x30-2021.jpg";
+import img12 from "@/assets/paintings/12-duck-pond-40x30-2021.jpg";
+import img13 from "@/assets/paintings/13-campfire-30x40-2021.jpg";
+import img14 from "@/assets/paintings/14-mountain-stream-30x40-2021.jpg";
+import img15 from "@/assets/paintings/15-widder-30x40-2021.jpg";
+import img16 from "@/assets/paintings/16-red-sea-30x40-2021.jpg";
+
+// --- 2022 ---
+import img17 from "@/assets/paintings/17-lavender-field-100x70-2022.png";
+import img18 from "@/assets/paintings/18-cowboy-with-horses-50x70-2022.jpg";
+import img19 from "@/assets/paintings/19-sunset-30x40-2022.jpg";
+import img20 from "@/assets/paintings/20-kohlmeise-40x30-2022.jpg";
+
+// --- 2023 ---
+import img21 from "@/assets/paintings/21-lighthouse-100x70-2023.jpg";
+import img22 from "@/assets/paintings/22-cabin-80x120-2023.jpg";
+
+// --- 2025 ---
+import img23 from "@/assets/paintings/23-strawberry-stilllife-70x50-2025.jpg";
+import img24 from "@/assets/paintings/24-cowboy-campfire-40x30-2025.jpg";
+import img25 from "@/assets/paintings/25-house-50x40-2025.jpg";
+
+// --- 2026 ---
+import img27 from "@/assets/paintings/27-duck-family-50x40-2026.jpg";
+import img26 from "@/assets/paintings/26-owl-40x40-2026.jpg";
+import img28 from "@/assets/paintings/28-titus-40x40-2026.jpg";
+
 type Work = {
   src: string;
-  title: string;
+  titleKey: string;
   no: string;
   size: string;
   year: string;
-  /** relative width weight — images share equal visual height */
   w: number;
 };
 
 const works: Work[] = [
-  { src: img26, title: "Owl", no: "No. 26", size: "40 × 40 cm", year: "2026", w: 3 },
-  { src: img27, title: "Duck Family", no: "No. 27", size: "50 × 40 cm", year: "2026", w: 3 },
-  { src: img23, title: "Strawberry Still Life", no: "No. 23", size: "70 × 50 cm", year: "2025", w: 3 },
-  { src: img24, title: "Night Camp", no: "No. 24", size: "40 × 30 cm", year: "2025", w: 3 },
-  { src: img25, title: "House at Ocean", no: "No. 25", size: "50 × 40 cm", year: "2025", w: 3 },
-  { src: img21, title: "Lighthouse", no: "No. 21", size: "100 × 70 cm", year: "2023", w: 3 },
-  { src: img22, title: "Cabin", no: "No. 22", size: "80 × 120 cm", year: "2023", w: 3 },
-  { src: img17, title: "Lavender Lady", no: "No. 17", size: "100 × 70 cm", year: "2022", w: 3 },
-  { src: img18, title: "Wrangler", no: "No. 18", size: "50 × 70 cm", year: "2022", w: 3 },
-  { src: img19, title: "Sunset Landscape", no: "No. 19", size: "30 × 40 cm", year: "2022", w: 3 },
-  { src: img20, title: "Bird", no: "No. 20", size: "40 × 30 cm", year: "2022", w: 3 },
-  { src: img05, title: "Deer", no: "No. 05", size: "70 × 50 cm", year: "2021", w: 3 },
-  { src: img06, title: "Landscape", no: "No. 06", size: "30 × 40 cm", year: "2021", w: 3 },
-  { src: img07, title: "River", no: "No. 07", size: "24 × 30 cm", year: "2021", w: 3 },
-  { src: img08, title: "Tree", no: "No. 08", size: "30 × 40 cm", year: "2021", w: 3 },
-  { src: img09, title: "Butterfly", no: "No. 09", size: "24 × 30 cm", year: "2021", w: 3 },
-  { src: img10, title: "Deer", no: "No. 10", size: "70 × 50 cm", year: "2021", w: 3 },
-  { src: img11, title: "Forest", no: "No. 11", size: "40 × 30 cm", year: "2021", w: 3 },
-  { src: img12, title: "Duck Pond", no: "No. 12", size: "40 × 30 cm", year: "2021", w: 3 },
-  { src: img13, title: "Campfire", no: "No. 13", size: "30 × 40 cm", year: "2021", w: 3 },
-  { src: img14, title: "Mountain Stream", no: "No. 14", size: "30 × 40 cm", year: "2021", w: 3 },
-  { src: img15, title: "Mountain Goat", no: "No. 15", size: "30 × 40 cm", year: "2021", w: 3 },
-  { src: img16, title: "Sunset Lake", no: "No. 16", size: "30 × 40 cm", year: "2021", w: 3 },
-  { src: img01, title: "River", no: "No. 01", size: "30 × 40 cm", year: "2020", w: 3 },
-  { src: img02, title: "Wine and Pepper Still Life", no: "No. 02", size: "100 × 70 cm", year: "2020", w: 3 },
-  { src: img03, title: "Mountain Lake", no: "No. 03", size: "40 × 30 cm", year: "2020", w: 3 },
-  { src: img04, title: "Windmill", no: "No. 04", size: "100 × 70 cm", year: "2020", w: 3 },
+  { src: img28, titleKey: "paintings.titus", no: "No. 28", size: "40 × 40 cm", year: "2026", w: 3 },
+  { src: img26, titleKey: "paintings.owl", no: "No. 27", size: "40 × 40 cm", year: "2026", w: 3 },
+  {
+    src: img27,
+    titleKey: "paintings.duckFamily",
+    no: "No. 26",
+    size: "50 × 40 cm",
+    year: "2026",
+    w: 3,
+  },
+  { src: img25, titleKey: "paintings.house", no: "No. 25", size: "50 × 40 cm", year: "2025", w: 3 },
+  {
+    src: img24,
+    titleKey: "paintings.cowboyCampfire",
+    no: "No. 24",
+    size: "40 × 30 cm",
+    year: "2025",
+    w: 3,
+  },
+  {
+    src: img23,
+    titleKey: "paintings.strawberryStillLife",
+    no: "No. 23",
+    size: "70 × 50 cm",
+    year: "2025",
+    w: 3,
+  },
+  {
+    src: img22,
+    titleKey: "paintings.cabin",
+    no: "No. 22",
+    size: "80 × 120 cm",
+    year: "2023",
+    w: 3,
+  },
+  {
+    src: img21,
+    titleKey: "paintings.lighthouse",
+    no: "No. 21",
+    size: "100 × 70 cm",
+    year: "2023",
+    w: 3,
+  },
+  {
+    src: img20,
+    titleKey: "paintings.greatTit",
+    no: "No. 20",
+    size: "40 × 30 cm",
+    year: "2022",
+    w: 3,
+  },
+  {
+    src: img19,
+    titleKey: "paintings.sunset",
+    no: "No. 19",
+    size: "30 × 40 cm",
+    year: "2022",
+    w: 3,
+  },
+  {
+    src: img18,
+    titleKey: "paintings.cowboyWithHorses",
+    no: "No. 18",
+    size: "50 × 70 cm",
+    year: "2022",
+    w: 3,
+  },
+  {
+    src: img17,
+    titleKey: "paintings.lavenderField",
+    no: "No. 17",
+    size: "100 × 70 cm",
+    year: "2022",
+    w: 3,
+  },
+  {
+    src: img16,
+    titleKey: "paintings.sunset",
+    no: "No. 16",
+    size: "30 × 40 cm",
+    year: "2021",
+    w: 3,
+  },
+  { src: img15, titleKey: "paintings.ram", no: "No. 15", size: "30 × 40 cm", year: "2021", w: 3 },
+  {
+    src: img14,
+    titleKey: "paintings.mountainStream",
+    no: "No. 14",
+    size: "30 × 40 cm",
+    year: "2021",
+    w: 3,
+  },
+  {
+    src: img13,
+    titleKey: "paintings.campfire",
+    no: "No. 13",
+    size: "30 × 40 cm",
+    year: "2021",
+    w: 3,
+  },
+  {
+    src: img12,
+    titleKey: "paintings.duckPond",
+    no: "No. 12",
+    size: "40 × 30 cm",
+    year: "2021",
+    w: 3,
+  },
+  {
+    src: img11,
+    titleKey: "paintings.forestPath",
+    no: "No. 11",
+    size: "40 × 30 cm",
+    year: "2021",
+    w: 3,
+  },
+  {
+    src: img10,
+    titleKey: "paintings.roeBuck",
+    no: "No. 10",
+    size: "70 × 50 cm",
+    year: "2021",
+    w: 3,
+  },
+  {
+    src: img09,
+    titleKey: "paintings.butterfly",
+    no: "No. 09",
+    size: "24 × 30 cm",
+    year: "2021",
+    w: 3,
+  },
+  {
+    src: img08,
+    titleKey: "paintings.oldTree",
+    no: "No. 08",
+    size: "30 × 40 cm",
+    year: "2021",
+    w: 3,
+  },
+  { src: img07, titleKey: "paintings.river", no: "No. 07", size: "24 × 30 cm", year: "2021", w: 3 },
+  {
+    src: img06,
+    titleKey: "paintings.landscape",
+    no: "No. 06",
+    size: "30 × 40 cm",
+    year: "2021",
+    w: 3,
+  },
+  {
+    src: img05,
+    titleKey: "paintings.roeBuck",
+    no: "No. 05",
+    size: "70 × 50 cm",
+    year: "2021",
+    w: 3,
+  },
+  {
+    src: img04,
+    titleKey: "paintings.windmill",
+    no: "No. 04",
+    size: "100 × 70 cm",
+    year: "2020",
+    w: 3,
+  },
+  {
+    src: img03,
+    titleKey: "paintings.mountainLake",
+    no: "No. 03",
+    size: "40 × 30 cm",
+    year: "2020",
+    w: 3,
+  },
+  {
+    src: img02,
+    titleKey: "paintings.wineAndPepperStillLife",
+    no: "No. 02",
+    size: "100 × 70 cm",
+    year: "2020",
+    w: 3,
+  },
+  { src: img01, titleKey: "paintings.river", no: "No. 01", size: "30 × 40 cm", year: "2020", w: 3 },
 ];
 
 // Rows built with width weights; images crop to equal height but vary in width.
@@ -82,7 +250,17 @@ const rows: Work[][] = [
   [works[24], works[25], works[26]],
 ];
 
-function Piece({ work, index, onOpen }: { work: Work; index: number; onOpen: (work: Work) => void }) {
+function Piece({
+  work,
+  index,
+  onOpen,
+  t,
+}: {
+  work: Work;
+  index: number;
+  onOpen: (work: Work) => void;
+  t: (key: string) => string;
+}) {
   return (
     <motion.figure
       initial={{ opacity: 0, y: 24 }}
@@ -101,13 +279,13 @@ function Piece({ work, index, onOpen }: { work: Work; index: number; onOpen: (wo
             onOpen(work);
           }
         }}
-        aria-label={`Open ${work.title} full size`}
-        className="text-left"
+        aria-label={`${t("gallery.openFullSize")} ${t(work.titleKey)}`}
+        className="text-left cursor-pointer"
       >
         <div className="relative overflow-hidden bg-muted aspect-square transition-all duration-500 group-hover:shadow-[0_30px_80px_-20px_rgba(20,15,10,0.25)]">
           <img
             src={work.src}
-            alt={work.title}
+            alt={t(work.titleKey)}
             loading="lazy"
             width={1024}
             height={1280}
@@ -115,7 +293,9 @@ function Piece({ work, index, onOpen }: { work: Work; index: number; onOpen: (wo
           />
         </div>
         <figcaption className="mt-5 text-sm">
-          <div className="text-2xl md:text-3xl font-handwritten leading-tight">{work.title}</div>
+          <div className="text-2xl md:text-3xl font-handwritten leading-tight">
+            {t(work.titleKey)}
+          </div>
           <div className="mt-3 flex flex-wrap items-center gap-3 font-handwritten text-sm text-muted-foreground">
             <span>{work.no}</span>
             <span aria-hidden="true">•</span>
@@ -130,6 +310,7 @@ function Piece({ work, index, onOpen }: { work: Work; index: number; onOpen: (wo
 }
 
 export function Gallery() {
+  const { t } = useTranslation();
   const [selectedWork, setSelectedWork] = useState<Work | null>(null);
 
   return (
@@ -139,7 +320,7 @@ export function Gallery() {
           {rows.map((row, ri) => (
             <div key={ri} className="flex flex-col md:flex-row gap-10 md:gap-16">
               {row.map((w, i) => (
-                <Piece key={w.no} work={w} index={ri * 3 + i} onOpen={setSelectedWork} />
+                <Piece key={w.no} work={w} index={ri * 3 + i} onOpen={setSelectedWork} t={t} />
               ))}
             </div>
           ))}
@@ -152,8 +333,8 @@ export function Gallery() {
             <div className="relative flex items-center justify-center">
               <img
                 src={selectedWork.src}
-                alt={selectedWork.title}
-                className="max-h-[85vh] w-auto object-contain rounded-lg"
+                alt={t(selectedWork.titleKey)}
+                className="max-h-[85vh] w-auto object-contain rounded-lg shadow-2xl"
               />
             </div>
           </DialogContent>

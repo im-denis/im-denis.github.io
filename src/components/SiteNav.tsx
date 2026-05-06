@@ -1,37 +1,64 @@
 import { Link, useRouterState } from "@tanstack/react-router";
-import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { useState, useEffect, useRef } from "react";
+import { Menu, X, Globe } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import signature from "@/assets/artist/signature.png";
-
-const links = [
-  { to: "/", label: "Work" },
-  { to: "/vita", label: "About" },
-  { to: "/commissions", label: "Commissions" },
-];
 
 export function SiteNav() {
   const [open, setOpen] = useState(false);
-  const { location } = useRouterState();
+  const [langOpen, setLangOpen] = useState(false);
+  const langRef = useRef<HTMLDivElement>(null);
 
+  const { location } = useRouterState();
+  const { t, i18n } = useTranslation();
+
+  const links = [
+    { to: "/", label: t("nav.work") },
+    { to: "/vita", label: t("nav.about") },
+    { to: "/commissions", label: t("nav.commissions") },
+  ];
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+    setLangOpen(false);
+  };
+
+  // Close language dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (langOpen && langRef.current && !langRef.current.contains(event.target as Node)) {
+        setLangOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [langOpen]);
+
+  // Close all menus on route change
   useEffect(() => {
     setOpen(false);
+    setLangOpen(false);
   }, [location.pathname]);
 
   return (
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/60">
-      <div className="mx-auto max-w-[1600px] px-6 md:px-12 py-5 md:py-7 flex items-center justify-between">
+      <div className="mx-auto max-w-[1600px] px-6 md:px-12 py-5 md:py-7 flex items-center justify-between relative">
+        {/* Logo */}
         <Link to="/" className="h-8 md:h-10 flex items-center">
           <img src={signature} alt="Denis Simon signature" className="h-full object-contain" />
         </Link>
 
+        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-10">
           {links.map((l) => (
             <Link
               key={l.to}
               to={l.to}
               className="font-display text-sm tracking-[0.15em] uppercase text-foreground/80 hover:text-foreground transition-colors"
-              activeProps={{ className: "font-display text-sm tracking-[0.15em] uppercase text-foreground underline underline-offset-8 decoration-1" }}
+              activeProps={{
+                className: "text-foreground underline underline-offset-8 decoration-1",
+              }}
               activeOptions={{ exact: true }}
             >
               {l.label}
@@ -39,38 +66,80 @@ export function SiteNav() {
           ))}
         </nav>
 
-        <button
-          aria-label="Toggle menu"
-          className="md:hidden p-2"
-          onClick={() => setOpen((v) => !v)}
-        >
-          {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-        </button>
-      </div>
+        {/* Actions Area (Language + Mobile Toggle) */}
+        <div className="flex items-center gap-4">
+          {/* Language Selector (Always visible) */}
+          <div className="relative" ref={langRef}>
+            <button
+              aria-label="Language selector"
+              className="flex items-center gap-2 p-2 rounded border border-border/50 hover:bg-accent/10 transition-colors cursor-pointer"
+              onClick={() => setLangOpen(!langOpen)}
+            >
+              <Globe className="h-4 w-4" />
+              <span className="text-xs font-medium uppercase">{i18n.language.toUpperCase()}</span>
+            </button>
 
-      <AnimatePresence>
-        {open && (
-          <motion.nav
-            initial={{ opacity: 0, y: -8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.25 }}
-            className="md:hidden border-t border-border/60 bg-background"
-          >
-            <div className="flex flex-col px-6 py-6 gap-5">
-              {links.map((l) => (
-                <Link
-                  key={l.to}
-                  to={l.to}
-                  className="font-display text-4xl tracking-tighter"
+            <AnimatePresence>
+              {langOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 10 }}
+                  className="absolute right-0 mt-2 w-40 bg-background border border-border/60 rounded-md shadow-xl z-[60] overflow-hidden"
                 >
-                  {l.label}
-                </Link>
-              ))}
-            </div>
-          </motion.nav>
-        )}
-      </AnimatePresence>
+                  <div className="flex flex-col py-1">
+                    {["en", "de", "es"].map((lng) => (
+                      <button
+                        key={lng}
+                        onClick={() => changeLanguage(lng)}
+                        className={`px-4 py-2 text-sm text-left hover:bg-accent transition-colors cursor-pointer ${
+                          i18n.language === lng ? "bg-accent/50 font-bold" : ""
+                        }`}
+                      >
+                        {lng === "en" ? "English" : lng === "de" ? "Deutsch" : "Español"}
+                      </button>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+
+          {/* Mobile Menu Toggle Button */}
+          <button
+            aria-label="Toggle menu"
+            className="md:hidden p-2 text-foreground"
+            onClick={() => setOpen((v) => !v)}
+          >
+            {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+        </div>
+
+        {/* Mobile Dropdown Menu */}
+        <AnimatePresence>
+          {open && (
+            <motion.nav
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "100vh" }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="md:hidden fixed top-[72px] md:top-[96px] left-0 right-0 bg-background/98 backdrop-blur-2xl z-40 border-t border-border/60 overflow-hidden"
+            >
+              <div className="flex flex-col px-8 py-12 gap-10">
+                {links.map((l) => (
+                  <Link
+                    key={l.to}
+                    to={l.to}
+                    className="font-display text-4xl tracking-tighter text-foreground hover:translate-x-2 transition-transform duration-300"
+                  >
+                    {l.label}
+                  </Link>
+                ))}
+              </div>
+            </motion.nav>
+          )}
+        </AnimatePresence>
+      </div>
     </header>
   );
 }

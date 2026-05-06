@@ -1,0 +1,121 @@
+{
+  "nav": {
+    "work": "Gallery",
+    "about": "About",
+    "commissions": "Commissions",
+    "language": "Language"
+  },
+  "home": {
+    "title": "Denis Simon",
+    "description": "Portfolio of Denis Simon — Realistic landscapes and animal portraits.",
+    "heroSubtitle": "Self-taught artist based in Oldenburg, Germany.",
+    "heroTitle": "DENIS",
+    "heroTitleSecond": "SIMON",
+    "heroTagline1": "High-fidelity realism",
+    "heroTagline2": "Landscapes",
+    "heroTagline3": "Wildlife",
+    "latestWorks": "Latest Works"
+  },
+  "vita": {
+    "title": "Denis Simon",
+    "description": "The biography and artistic journey of painter Denis Simon.",
+    "aboutLabel": "About me",
+    "heading": "Capturing\nthe seen.",
+    "artistStatement": "I paint to preserve the beauty I find in the world — emotional moments, natural light, and the subtle details that often go unnoticed. For over a decade, this passion has driven my work, with every canvas presenting new challenges and further refining my craft.",
+    "biography": "Born in Kazakhstan and raised in Germany, art has shaped my perspective since childhood. I am a self-taught artist, having honed my techniques through years of dedicated practice. My work spans diverse styles — from vast landscapes and atmospheric compositions to portraits, wildlife, and abstract pieces — each reflecting my personal journey and a commitment to portraying nature's true essence.",
+    "professionalLife": "By day, I work as an IT Systems Architect. My creative passion comes to life in my studio in Oldenburg, Northern Germany. This balance between analytical problem-solving and artistic expression defines both my professional and personal life."
+  },
+  "commissions": {
+    "title": "Denis Simon",
+    "description": "Commission a custom acrylic painting — landscape or animal portrait — by Denis Simon.",
+    "label": "Commissions",
+    "heading": "Your vision.\nBrought to life with detail.",
+    "intro": "Places that hold meaning. A pet you love. I accept a limited number of private commissions each year. Every piece is an original acrylic on canvas, signed, varnished, and crafted to last for generations.",
+    "processLabel": "The Process",
+    "steps": [
+      {
+        "title": "Discovery",
+        "body": "We start with a conversation. You describe the subject, the setting, and the mood. I listen."
+      },
+      {
+        "title": "Reference",
+        "body": "You share your photographs — ideally your own. Together, we decide on the composition and focus."
+      },
+      {
+        "title": "Proposal",
+        "body": "I provide a written proposal covering size, color palette, timeline, and pricing. Nothing begins until you are completely ready."
+      },
+      {
+        "title": "Creation",
+        "body": "The painting process takes six to twelve weeks. You will receive exactly two progress updates to see your piece come to life."
+      },
+      {
+        "title": "Delivery",
+        "body": "The finished canvas is varnished, signed, and shipped with full insurance to any destination worldwide."
+      }
+    ],
+    "ctaHeading": "Let’s discuss\nyour painting.",
+    "ctaText": "Send me a message with your ideas — subject, references, desired dimensions, and timeline. I’ll get back to you with a proposal and the next steps.",
+    "ctaButton": "Send inquiry →"
+  },
+  "footer": {
+    "heading": "Let's create\nsomething real.",
+    "studio": "Studio",
+    "studioLocation": "Oldenburg, Germany",
+    "contact": "Contact",
+    "follow": "Follow",
+    "instagram": "Instagram",
+    "navigate": "Navigate",
+    "imprint": "Legal Notice",
+    "copyright": "© 2026 Denis Simon. All rights reserved."
+  },
+  "imprint": {
+    "title": "Legal Notice - Denis Simon",
+    "description": "Legal notice and contact information for Denis Simon, artist based in Oldenburg, Germany.",
+    "label": "Legal",
+    "heading": "Legal Notice",
+    "infoTitle": "Information pursuant to § 5 DDG",
+    "address": "Denis Simon\nSchumacherhof 2b\n26123 Oldenburg\nGermany",
+    "contactTitle": "Contact",
+    "phoneLabel": "Phone:",
+    "phone": "+49 (0) 159 06303066",
+    "emailLabel": "Email:",
+    "editorialTitle": "Responsible for editorial content pursuant to § 18 Abs. 2 MStV",
+    "disputeTitle": "EU Dispute Resolution",
+    "disputeText": "The European Commission provides a platform for online dispute resolution (ODR):",
+    "disputeLink": "https://ec.europa.eu/consumers/odr/",
+    "disputeNote": "You can find my email address in the contact section above."
+  },
+  "paintings": {
+    "river": "River",
+    "wineAndPepperStillLife": "Still Life with Wine and Pepper",
+    "boat": "Boat",
+    "flowersAndWindmill": "Flowers and Windmill",
+    "roeBuck": "Roe Buck",
+    "landscape": "Landscape",
+    "oldTree": "Ancient Tree",
+    "butterfly": "Butterfly",
+    "forestPath": "Forest Path",
+    "duckPond": "Duck Pond",
+    "campfire": "Campfire",
+    "mountainStream": "Mountain Stream",
+    "ram": "Ram",
+    "redSea": "Red Sea",
+    "lavenderField": "Lavender Lady",
+    "cowboyWithHorses": "Wrangler",
+    "sunset": "Sunset",
+    "greatTit": "Great Tit",
+    "lighthouse": "Lighthouse",
+    "cabin": "Cabin",
+    "strawberryStillLife": "Still Life with Strawberries",
+    "cowboyCampfire": "Night Camp",
+    "house": "House",
+    "duckFamily": "Duck Family",
+    "owl": "Owl",
+    "titus": "Titus",
+    "windmill": "Windmill",
+    "mountainLake": "Mountain Lake",
+    "sunsetLake": "Sunset at the Lake",
+    "tree": "Tree"
+  }
+}

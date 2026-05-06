@@ -1,0 +1,124 @@
+{
+  "nav": {
+    "work": "Gemälde",
+    "about": "Über mich",
+    "commissions": "Aufträge",
+    "language": "Sprache"
+  },
+  "home": {
+    "title": "Denis Simon",
+    "description": "Portfolio von Denis Simon — Realistische Landschaften und Tierporträts.",
+    "heroSubtitle": "Künstler aus Oldenburg, Deutschland.",
+    "heroTitle": "DENIS",
+    "heroTitleSecond": "SIMON",
+    "heroTagline1": "Realismus",
+    "heroTagline2": "Landschaften",
+    "heroTagline3": "Tiere",
+    "latestWorks": "Neueste Werke"
+  },
+  "vita": {
+    "title": "Denis Simon",
+    "description": "Die Biografie und der künstlerische Werdegang des Malers Denis Simon.",
+    "aboutLabel": "Über mich",
+    "heading": "Ein Maler\ndes Augenblicks.",
+    "artistStatement": "Ich male, um die Schönheit der Welt festzuhalten – emotionale Momente, das Spiel des natürlichen Lichts und jene stillen Details, die im Alltag oft übersehen werden. Seit über einem Jahrzehnt treibt mich diese Leidenschaft an. Jede Leinwand stellt mich vor neue Herausforderungen und lässt mich als Künstler weiter wachsen.",
+    "biography": "In Kasachstan geboren und in Deutschland aufgewachsen, prägt die Kunst schon seit meiner Kindheit meinen Blick auf die Welt. Die notwendigen Techniken habe ich mir über Jahre hinweg in engagierter Eigenarbeit selbst beigebracht. Mein Werk ist vielseitig und reicht von imposanten Landschaften und verträumten Kompositionen bis hin zu Porträts, Tierstudien und abstrakten Arbeiten. Dabei spiegelt jedes Bild meine persönlichen Empfindungen und den Anspruch wider, der Natur wahrhaftig zu begegnen.",
+    "professionalLife": "Hauptberuflich bin ich als IT-Systemarchitekt tätig. Den kreativen Ausgleich finde ich in meinem Studio in Oldenburg, wo ich meiner Leidenschaft für die Malerei nachgehe. Diese Balance zwischen analytischer Problemlösung und künstlerischem Ausdruck definiert sowohl mein berufliches als auch mein kreatives Leben."
+  },
+  "commissions": {
+    "title": "Denis Simon",
+    "description": "Lass dir von Denis Simon ein maßgeschneidertes Acrylgemälde – Landschaft oder Tierporträt – anfertigen.",
+    "label": "Auftragsarbeiten",
+    "heading": "Dein Motiv.\nGemalt mit Liebe zum Detail.",
+    "intro": "Orte, die dir wichtig sind. Ein Tier, das du liebst. Ich nehme jedes Jahr eine begrenzte Anzahl privater Aufträge an. Jedes Gemälde ist ein Acrylwerk auf Leinwand – signiert, firnisversiegelt und für Generationen geschaffen.",
+    "processLabel": "Der Ablauf",
+    "steps": [
+      {
+        "title": "Gespräch",
+        "body": "Wir starten mit einem Telefonat. Du beschreibst mir das Motiv, den Ort und das Gefühl. Ich höre dir zu."
+      },
+      {
+        "title": "Referenz",
+        "body": "Du teilst deine Fotos mit mir – am besten eigene Aufnahmen. Gemeinsam legen wir den Rahmen fest."
+      },
+      {
+        "title": "Angebot",
+        "body": "Ich sende dir ein schriftliches Angebot mit Details zu Größe, Farbwelt, Zeitplan und Preis. Nichts beginnt, bevor du nicht zugestimmt hast."
+      },
+      {
+        "title": "Malen",
+        "body": "Die Arbeit dauert sechs bis zwölf Wochen. Du erhältst genau zwei Fotos vom Fortschritt – nicht mehr und nicht weniger."
+      },
+      {
+        "title": "Lieferung",
+        "body": "Die fertige Leinwand wird lackiert, signiert und weltweit versichert an dich versandt."
+      }
+    ],
+    "ctaHeading": "Erzähl mir\nvon deinem Projekt.",
+    "ctaText": "Schick mir eine Nachricht mit Details zu deiner Vision – Motiv, Referenzen, Maße und Zeitrahmen. Ich melde mich mit einem Angebot und den nächsten Schritten bei dir.",
+    "ctaButton": "Anfrage senden →"
+  },
+  "footer": {
+    "heading": "Lass uns\netwas Echtes erschaffen.",
+    "studio": "Studio",
+    "studioLocation": "Oldenburg, Deutschland",
+    "contact": "Kontakt",
+    "follow": "Folgen",
+    "instagram": "Instagram",
+    "navigate": "Navigation",
+    "imprint": "Impressum",
+    "copyright": "© 2026 Denis Simon. Alle Rechte vorbehalten."
+  },
+  "imprint": {
+    "title": "Rechtlicher Hinweis - Denis Simon",
+    "description": "Rechtlicher Hinweis und Kontaktinformationen für Denis Simon, Künstler ansässig in Oldenburg, Deutschland.",
+    "label": "Rechtliches",
+    "heading": "Rechtlicher Hinweis",
+    "infoTitle": "Informationen gemäß § 5 DDG",
+    "address": "Denis Simon\nSchumacherhof 2b\n26123 Oldenburg\nDeutschland",
+    "contactTitle": "Kontakt",
+    "phoneLabel": "Telefon:",
+    "phone": "+49 (0) 159 06303066",
+    "emailLabel": "E-Mail:",
+    "editorialTitle": "Verantwortlich für den redaktionellen Inhalt gemäß § 18 Abs. 2 MStV",
+    "disputeTitle": "EU-Streitschlichtung",
+    "disputeText": "Die Europäische Kommission bietet eine Plattform für die Online-Streitbeilegung (OS):",
+    "disputeLink": "https://ec.europa.eu/consumers/odr/",
+    "disputeNote": "Die E-Mail-Adresse finden Sie oben im Kontaktbereich."
+  },
+  "paintings": {
+    "river": "Fluss",
+    "wineAndPepperStillLife": "Stillleben von Wein und Pfeffer",
+    "boat": "Boot",
+    "flowersAndWindmill": "Windmühle",
+    "roeBuck": "Rehbock",
+    "landscape": "Landschaft",
+    "oldTree": "Alter Baum",
+    "butterfly": "Schmetterling",
+    "forestPath": "Wald",
+    "duckPond": "Ententeich",
+    "campfire": "Lagerfeuer",
+    "mountainStream": "Gebirgsbach",
+    "ram": "Widder",
+    "redSea": "Rotes Meer",
+    "lavenderField": "Lavendelfrau",
+    "cowboyWithHorses": "Reiter",
+    "sunset": "Sonnenuntergang",
+    "greatTit": "Kohlmeise",
+    "lighthouse": "Leuchtturm",
+    "cabin": "Hütte",
+    "strawberryStillLife": "Stillleben von Erdbeeren",
+    "cowboyCampfire": "Nachtlager",
+    "house": "Haus",
+    "duckFamily": "Entenfamilie",
+    "owl": "Eule",
+    "titus": "Titus",
+    "windmill": "Windmühle",
+    "mountainLake": "Gebirgssee",
+    "sunsetLake": "Sonnenuntergang-See",
+    "tree": "Baum"
+  },
+  "gallery": {
+    "openFullSize": "Öffnen"
+  }
+}
