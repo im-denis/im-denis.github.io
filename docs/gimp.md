@@ -1,5 +1,7 @@
 # Bildbearbeitung
 
+- Druckgröße 300 DPI!
+
 ---- Geometrie----
 Drehen: Bild, Transformation
 Hilfslinien
