@@ -104,7 +104,7 @@ function CommissionsPage() {
               {t("commissions.ctaText")}
             </p>
             <a
-              href="mailto:mail.simon.denis@gmail.com"
+              href="mailto:kontakt@denissimon.de"
               className="font-display text-sm tracking-[0.15em] uppercase bg-foreground text-background px-8 py-4 hover:bg-foreground/85 transition-colors inline-block"
             >
               {t("commissions.ctaButton")}

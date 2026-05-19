@@ -5,6 +5,7 @@
 - Registrierung bei LUCID Verpackungsregister für Verpackungslizenz
 - Abbuhcungen mit N26 Konto verknüpfen.
 - Shop und Profiltexte: Qualitätssicherung
+- Google Analytics einrichten für Webseite und Etsy ? bei Etsy verknüpfen
 
 
 # MARKETING
@@ -17,13 +18,15 @@
 
 # PRINTFUL
 
-- printful setup products
-    - Per Painting  Product Groups
-    - Poster and Framed Poster
-    - Canvas and Framed Canvas
-    - individual sizing / framing
+- Alle Gemälde importieren und als Produkte unters. Größen speichern.
+- Mockups / Hintergrundpositionen
+- Poster and Framed Poster
+- Canvas and Framed Canvas
+- individual sizing / framing
 
 # ETSY
+
+- Übersetzungen / Multinationalität Verkauf
 - Etsy Shop Setup
 - UST hinterlegen, damit Etsy netto sendet ?
 

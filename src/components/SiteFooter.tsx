@@ -31,10 +31,10 @@ export function SiteFooter() {
               {t("footer.contact")}
             </div>
             <a
-              href="mailto:mail.simon.denis@gmail.com"
+              href="mailto:kontakt@denissimon.de"
               className="hover:underline underline-offset-4 whitespace-nowrap pr-4"
             >
-              mail.simon.denis@gmail.com
+              kontakt@denissimon.de
             </a>
           </div>
 

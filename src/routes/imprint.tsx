@@ -58,10 +58,10 @@ function ImprintPage() {
                 <br />
                 {t("imprint.emailLabel")}{" "}
                 <a
-                  href="mailto:mail.simon.denis@gmail.com"
+                  href="mailto:kontakt@denissimon.de"
                   className="underline decoration-muted-foreground/30 hover:decoration-foreground"
                 >
-                  mail.simon.denis@gmail.com
+                  kontakt@denissimon.de
                 </a>
               </p>
             </section>
