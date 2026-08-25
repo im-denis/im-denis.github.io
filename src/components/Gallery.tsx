@@ -3,45 +3,46 @@ import { useState } from "react";
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 import { useTranslation } from "react-i18next";
 
-// --- 2020 ---
-import img01 from "@/assets/paintings/01-river-30x40-2020.jpg";
-import img02 from "@/assets/paintings/02-wine-and-pepper-still-life-100x70-2020.jpg";
-import img03 from "@/assets/paintings/03-boat-40x30-2020.jpg";
-import img04 from "@/assets/paintings/04-flowers-and-windmill-100x70-2020.jpg";
-
-// --- 2021 ---
-import img05 from "@/assets/paintings/05-rehbock-70x50-2021.jpg";
-import img06 from "@/assets/paintings/06-landscape-30x40-2021.jpg";
-import img07 from "@/assets/paintings/07-river-24x30-2021.jpg";
-import img08 from "@/assets/paintings/08-old-tree-30x40-2021.jpg";
-import img09 from "@/assets/paintings/09-butterfly-24x30-2021.jpg";
-import img10 from "@/assets/paintings/10-rehbock-70x50-2021.jpg";
-import img11 from "@/assets/paintings/11-forest-path-40x30-2021.jpg";
-import img12 from "@/assets/paintings/12-duck-pond-40x30-2021.jpg";
-import img13 from "@/assets/paintings/13-campfire-30x40-2021.jpg";
-import img14 from "@/assets/paintings/14-mountain-stream-30x40-2021.jpg";
-import img15 from "@/assets/paintings/15-widder-30x40-2021.jpg";
-import img16 from "@/assets/paintings/16-red-sea-30x40-2021.jpg";
-
-// --- 2022 ---
-import img17 from "@/assets/paintings/17-lavender-field-100x70-2022.png";
-import img18 from "@/assets/paintings/18-cowboy-with-horses-50x70-2022.jpg";
-import img19 from "@/assets/paintings/19-sunset-30x40-2022.jpg";
-import img20 from "@/assets/paintings/20-kohlmeise-40x30-2022.jpg";
-
-// --- 2023 ---
-import img21 from "@/assets/paintings/21-lighthouse-100x70-2023.jpg";
-import img22 from "@/assets/paintings/22-cabin-80x120-2023.jpg";
+// --- 2026 ---
+import img29 from "@/assets/paintings/29-roe-pair-at-brook-70x50-2026.jpg";
+import img28 from "@/assets/paintings/28-titus-40x40-2026.jpg";
+import img26 from "@/assets/paintings/26-owl-40x40-2026.jpg";
+import img27 from "@/assets/paintings/27-duck-family-50x40-2026.jpg";
 
 // --- 2025 ---
-import img23 from "@/assets/paintings/23-strawberry-stilllife-70x50-2025.jpg";
-import img24 from "@/assets/paintings/24-cowboy-campfire-40x30-2025.jpg";
 import img25 from "@/assets/paintings/25-house-50x40-2025.jpg";
+import img24 from "@/assets/paintings/24-night-camp-40x30-2025.jpg";
+import img23 from "@/assets/paintings/23-strawberry-still-life-70x50-2025.jpg";
 
-// --- 2026 ---
-import img27 from "@/assets/paintings/27-duck-family-50x40-2026.jpg";
-import img26 from "@/assets/paintings/26-owl-40x40-2026.jpg";
-import img28 from "@/assets/paintings/28-titus-40x40-2026.jpg";
+// --- 2023 ---
+import img22 from "@/assets/paintings/22-cabin-80x120-2023.jpg";
+import img21 from "@/assets/paintings/21-lighthouse-100x70-2023.jpg";
+
+// --- 2022 ---
+import img20 from "@/assets/paintings/20-great-tit-40x30-2022.jpg";
+import img19 from "@/assets/paintings/19-road-in-sunset-30x40-2022.jpg";
+import img18 from "@/assets/paintings/18-wrangler-50x70-2022.jpg";
+import img17 from "@/assets/paintings/17-lavender-lady-100x70-2022.png";
+
+// --- 2021 ---
+import img16 from "@/assets/paintings/16-red-sea-30x40-2021.jpg";
+import img15 from "@/assets/paintings/15-ram-30x40-2021.jpg";
+import img14 from "@/assets/paintings/14-mountain-stream-30x40-2021.jpg";
+import img13 from "@/assets/paintings/13-campfire-30x40-2021.jpg";
+import img12 from "@/assets/paintings/12-duck-pond-40x30-2021.jpg";
+import img11 from "@/assets/paintings/11-forest-path-40x30-2021.jpg";
+import img10 from "@/assets/paintings/10-roe-buck-70x50-2021.jpg";
+import img09 from "@/assets/paintings/09-butterfly-24x30-2021.jpg";
+import img08 from "@/assets/paintings/08-ancient-tree-30x40-2021.jpg";
+import img07 from "@/assets/paintings/07-river-24x30-2021.jpg";
+import img06 from "@/assets/paintings/06-landscape-30x40-2021.jpg";
+import img05 from "@/assets/paintings/05-roe-buck-70x50-2021.jpg";
+
+// --- 2020 ---
+import img04 from "@/assets/paintings/04-windmill-100x70-2020.jpg";
+import img03 from "@/assets/paintings/03-mountain-lake-40x30-2020.jpg";
+import img02 from "@/assets/paintings/02-wine-and-pepper-still-life-100x70-2020.jpg";
+import img01 from "@/assets/paintings/01-aper-tief-30x40-2020.jpg";
 
 type Work = {
   src: string;
@@ -53,12 +54,20 @@ type Work = {
 };
 
 const works: Work[] = [
+  {
+    src: img29,
+    titleKey: "paintings.roePairAtBrook",
+    no: "No. 29",
+    size: "70 × 50 cm",
+    year: "2026",
+    w: 3,
+  },
   { src: img28, titleKey: "paintings.titus", no: "No. 28", size: "40 × 40 cm", year: "2026", w: 3 },
-  { src: img26, titleKey: "paintings.owl", no: "No. 27", size: "40 × 40 cm", year: "2026", w: 3 },
+  { src: img26, titleKey: "paintings.owl", no: "No. 26", size: "40 × 40 cm", year: "2026", w: 3 },
   {
     src: img27,
     titleKey: "paintings.duckFamily",
-    no: "No. 26",
+    no: "No. 27",
     size: "50 × 40 cm",
     year: "2026",
     w: 3,
@@ -130,7 +139,7 @@ const works: Work[] = [
   },
   {
     src: img16,
-    titleKey: "paintings.sunset",
+    titleKey: "paintings.redSea",
     no: "No. 16",
     size: "30 × 40 cm",
     year: "2021",
@@ -248,6 +257,7 @@ const rows: Work[][] = [
   [works[18], works[19], works[20]],
   [works[21], works[22], works[23]],
   [works[24], works[25], works[26]],
+  [works[27], works[28]],
 ];
 
 function Piece({
