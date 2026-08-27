@@ -76,7 +76,6 @@ function VitaPage() {
             >
               {t("vita.biography")}
             </motion.p>
-
           </div>
         </div>
       </section>

@@ -339,7 +339,10 @@ export function Gallery() {
 
       <Dialog open={!!selectedWork} onOpenChange={(open) => !open && setSelectedWork(null)}>
         {selectedWork && (
-          <DialogContent onClick={() => setSelectedWork(null)} className="w-full max-w-[95vw] max-h-[95vh] p-0 bg-transparent border-none shadow-none sm:max-w-[1200px]">
+          <DialogContent
+            onClick={() => setSelectedWork(null)}
+            className="w-full max-w-[95vw] max-h-[95vh] p-0 bg-transparent border-none shadow-none sm:max-w-[1200px]"
+          >
             <div className="relative flex items-center justify-center">
               <img
                 src={selectedWork.src}
