@@ -47,7 +47,7 @@ export function SiteNav() {
         {/* Logo and Name */}
         <Link to="/#works" className="h-8 md:h-10 flex items-end">
           <img src={logo} alt="D" className="h-full object-contain" />
-          <span className="font-serif font-bold leading-none text-blue-900 dark:text-blue-100 text-xs md:text-sm tracking-wide -ml-1 md:-ml-1.5">
+          <span className="font-serif font-bold leading-none text-blue-900 dark:text-blue-100 text-2xl md:text-3xl tracking-wide -ml-0.5 md:-ml-1">
             enis Simon
           </span>
         </Link>
