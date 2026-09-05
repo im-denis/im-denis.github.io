@@ -45,9 +45,9 @@ export function SiteNav() {
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/60">
       <div className="mx-auto max-w-[1600px] px-6 md:px-12 py-5 md:py-7 flex items-center justify-between relative">
         {/* Logo and Name */}
-        <Link to="/#works" className="h-8 md:h-10 flex items-end gap-0.5 md:gap-1">
+        <Link to="/#works" className="h-8 md:h-10 flex items-end">
           <img src={logo} alt="D" className="h-full object-contain" />
-          <span className="font-serif font-bold leading-none text-blue-900 dark:text-blue-100 text-xs md:text-sm tracking-wide">
+          <span className="font-serif font-bold leading-none text-blue-900 dark:text-blue-100 text-xs md:text-sm tracking-wide -ml-1 md:-ml-1.5">
             enis Simon
           </span>
         </Link>
