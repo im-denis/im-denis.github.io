@@ -6,7 +6,7 @@
     "language": "Sprache"
   },
   "home": {
-    "title": "Denis Simon",
+    "title": "Denis Simon — Realistische Gemälde & Tierporträts",
     "description": "Portfolio von Denis Simon — Realistische Landschaften und Tierporträts.",
     "heroSubtitle": "Künstler aus Oldenburg, Deutschland.",
     "heroTitle": "DENIS",
@@ -17,7 +17,7 @@
     "latestWorks": "Neueste Werke"
   },
   "vita": {
-    "title": "Denis Simon",
+    "title": "Über Mich — Denis Simon",
     "description": "Die Biografie und der künstlerische Werdegang des Malers Denis Simon.",
     "aboutLabel": "Über mich",
     "heading": "Die gefühlte\nWelt festhalten.",
@@ -25,7 +25,7 @@
     "biography": "Meine Arbeit ist in der rauen Eleganz natürlicher Landschaften und der stillen Erhabenheit der Tierwelt verankert. Mich faszinieren atmosphärische Kompositionen, in denen das Licht die Stimmung eines Ortes verändert. Sie laden dazu ein, in das Bild einzutauchen und die stille Kraft der Natur zu spüren. Letztendlich sind diese Gemälde nicht nur meine persönliche Reise; sie sind eine offene Einladung an Sie, innezuhalten, genauer hinzusehen und die tiefe Schönheit neu zu entdecken, die uns alle verbindet."
   },
   "commissions": {
-    "title": "Denis Simon",
+    "title": "Auftragsarbeiten — Denis Simon",
     "description": "Lass dir von Denis Simon ein maßgeschneidertes Acrylgemälde – Landschaft oder Tierporträt – anfertigen.",
     "label": "Auftragsarbeiten",
     "heading": "Dein Motiv.\nGemalt mit Liebe zum Detail.",
@@ -71,7 +71,7 @@
     "copyright": "© {{year}} Denis Simon. Alle Rechte vorbehalten."
   },
   "imprint": {
-    "title": "Rechtlicher Hinweis - Denis Simon",
+    "title": "Impressum — Denis Simon",
     "description": "Rechtlicher Hinweis und Kontaktinformationen für Denis Simon, Künstler ansässig in Oldenburg, Deutschland.",
     "label": "Rechtliches",
     "heading": "Impressum",
@@ -88,7 +88,7 @@
     "disputeNote": "Die E-Mail-Adresse finden Sie oben im Kontaktbereich."
   },
   "privacy": {
-    "title": "Datenschutzerklärung - Denis Simon",
+    "title": "Datenschutzerklärung — Denis Simon",
     "description": "Datenschutzerklärung gemäß DSGVO für Denis Simon, Künstler ansässig in Oldenburg, Deutschland.",
     "label": "Datenschutz",
     "heading": "Datenschutzerklärung",

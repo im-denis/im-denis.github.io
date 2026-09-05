@@ -6,7 +6,7 @@
     "language": "Idioma"
   },
   "home": {
-    "title": "Denis Simon",
+    "title": "Denis Simon — Pinturas realistas y retratos de animales",
     "description": "Portafolio de Denis Simon — Paisajes realistas y retratos de animales.",
     "heroSubtitle": "Artista autodidacta de Oldenburg, Alemania.",
     "heroTitle": "DENIS",
@@ -17,7 +17,7 @@
     "latestWorks": "Últimas obras"
   },
   "vita": {
-    "title": "Denis Simon",
+    "title": "Sobre mí — Denis Simon",
     "description": "Biografía y trayectoria artística del pintor Denis Simon.",
     "aboutLabel": "Sobre mí",
     "heading": "Capturar el\nmundo que se siente.",
@@ -25,7 +25,7 @@
     "biography": "Mi obra se fundamenta en la elegancia pura de los paisajes naturales y la majestuosidad silenciosa de la vida silvestre. Me atraen las composiciones atmosféricas donde la luz transforma la atmósfera de un lugar, invitándole a adentrarse en la escena y a sentir el poder sereno del mundo natural. En última instancia, estas pinturas no son solo mi viaje personal; son una invitación abierta para que usted se detenga, observe más de cerca y redescubra la profunda belleza que nos conecta a todos."
   },
   "commissions": {
-    "title": "Denis Simon",
+    "title": "Encargos — Denis Simon",
     "description": "Solicita una pintura acrílica personalizada —paisaje o retrato animal— a Denis Simon.",
     "label": "Encargos",
     "heading": "Tu motivo.\nPintado con mimo.",
@@ -70,7 +70,7 @@
     "copyright": "© {{year}} Denis Simon. Todos los derechos reservados."
   },
   "imprint": {
-    "title": "Aviso legal - Denis Simon",
+    "title": "Aviso legal — Denis Simon",
     "description": "Información legal y de contacto de Denis Simon, artista en Oldenburg, Alemania.",
     "label": "Legal",
     "heading": "Aviso legal",
@@ -87,7 +87,7 @@
     "disputeNote": "Encontrarás mi dirección de correo electrónico más arriba, en la sección de contacto."
   },
   "privacy": {
-    "title": "Política de privacidad - Denis Simon",
+    "title": "Política de privacidad — Denis Simon",
     "description": "Política de privacidad conforme al RGPD para Denis Simon, artista en Oldenburg, Alemania.",
     "label": "Privacidad",
     "heading": "Política de privacidad",

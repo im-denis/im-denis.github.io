@@ -1,15 +1,38 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Denis Simon</title>
-    <meta name="description" content="Denis Simon" />
+    <title>Denis Simon — Realistische Gemälde &amp; Tierporträts</title>
+    <meta
+      name="description"
+      content="Portfolio von Denis Simon — Realistische Landschaften und Tierporträts als Acrylgemälde auf Bestellung. Kunst aus Oldenburg."
+    />
     <meta name="author" content="Denis Simon" />
-    <meta property="og:title" content="Denis Simon" />
-    <meta property="og:description" content="Denis Simon" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://denissimon.de/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Denis Simon — Realistische Gemälde &amp; Tierporträts" />
+    <meta
+      property="og:description"
+      content="Portfolio von Denis Simon — Realistische Landschaften und Tierporträts als Acrylgemälde auf Bestellung."
+    />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://denissimon.de/" />
+    <meta property="og:image" content="https://denissimon.de/og-image.jpg" />
+    <meta property="og:site_name" content="Denis Simon" />
+    <meta property="og:locale" content="de_DE" />
+
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Denis Simon — Realistische Gemälde &amp; Tierporträts" />
+    <meta
+      name="twitter:description"
+      content="Portfolio von Denis Simon — Realistische Landschaften und Tierporträts als Acrylgemälde auf Bestellung."
+    />
+    <meta name="twitter:image" content="https://denissimon.de/og-image.jpg" />
+
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,6 +41,36 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Lora:wght@400;600;700&family=Caveat:wght@400;600&family=Inter:wght@300;400;500;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
     />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "name": "Denis Simon",
+            "url": "https://denissimon.de/"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://denissimon.de/#person",
+            "name": "Denis Simon",
+            "jobTitle": "Maler",
+            "url": "https://denissimon.de/",
+            "image": "https://denissimon.de/og-image.jpg",
+            "sameAs": ["https://www.instagram.com/denissimon.art/"],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Schumacherhof 2b",
+              "postalCode": "26123",
+              "addressLocality": "Oldenburg",
+              "addressCountry": "DE"
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

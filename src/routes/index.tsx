@@ -1,5 +1,6 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, useRouterState } from "@tanstack/react-router";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import { PageShell } from "@/components/PageShell";
 import { Gallery } from "@/components/Gallery";
 import { useDocumentMeta } from "@/lib/useDocumentMeta";
@@ -10,8 +11,27 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
+function useHashScroll() {
+  const { location } = useRouterState();
+  useEffect(() => {
+    if (location.hash !== "#works") return;
+    const timer = window.setTimeout(() => {
+      const el = document.getElementById("works");
+      if (el) {
+        const header = document.querySelector("header");
+        const offset = header ? header.offsetHeight : 0;
+        const top = el.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top, behavior: "smooth" });
+      }
+    }, 80);
+    return () => window.clearTimeout(timer);
+  }, [location.hash]);
+}
+
 function Index() {
   const { t } = useTranslation();
+
+  useHashScroll();
 
   useDocumentMeta({
     title: t("home.title"),

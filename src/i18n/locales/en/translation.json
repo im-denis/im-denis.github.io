@@ -6,7 +6,7 @@
     "language": "Language"
   },
   "home": {
-    "title": "Denis Simon",
+    "title": "Denis Simon — Realistic Paintings & Animal Portraits",
     "description": "Portfolio of Denis Simon — Realistic landscapes and animal portraits.",
     "heroSubtitle": "Self-taught artist based in Oldenburg, Germany.",
     "heroTitle": "DENIS",
@@ -17,7 +17,7 @@
     "latestWorks": "Latest Works"
   },
   "vita": {
-    "title": "Denis Simon",
+    "title": "About Me — Denis Simon",
     "description": "The biography and artistic journey of painter Denis Simon.",
     "aboutLabel": "About me",
     "heading": "Capturing the\nFelt World",
@@ -25,7 +25,7 @@
     "biography": "My work is anchored in the raw elegance of natural landscapes and the quiet majesty of wildlife. I am drawn to atmospheric compositions where light alters the mood of a place, inviting you to step into the scene and feel the quiet power of the natural world. Ultimately, these paintings are not just my personal journey; they are an open invitation for you to pause, look closer, and rediscover the profound beauty that connects us all."
   },
   "commissions": {
-    "title": "Denis Simon",
+    "title": "Commissions — Denis Simon",
     "description": "Commission a custom acrylic painting — landscape or animal portrait — by Denis Simon.",
     "label": "Commissions",
     "heading": "Your vision.\nBrought to life with detail.",
@@ -70,7 +70,7 @@
     "copyright": "© {{year}} Denis Simon. All rights reserved."
   },
   "imprint": {
-    "title": "Legal Notice - Denis Simon",
+    "title": "Legal Notice — Denis Simon",
     "description": "Legal notice and contact information for Denis Simon, artist based in Oldenburg, Germany.",
     "label": "Legal",
     "heading": "Legal Notice",
@@ -87,7 +87,7 @@
     "disputeNote": "You can find my email address in the contact section above."
   },
   "privacy": {
-    "title": "Privacy Policy - Denis Simon",
+    "title": "Privacy Policy — Denis Simon",
     "description": "Privacy policy in accordance with the GDPR for Denis Simon, artist based in Oldenburg, Germany.",
     "label": "Privacy",
     "heading": "Privacy Policy",
