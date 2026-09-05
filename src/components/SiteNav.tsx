@@ -1,9 +1,10 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useState, useEffect, useRef } from "react";
-import { Menu, X, Globe, Instagram } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import logo from "@/assets/artist/logo.png";
+import { InstagramIcon } from "@/components/InstagramIcon";
 
 export function SiteNav() {
   const [open, setOpen] = useState(false);
@@ -115,9 +116,9 @@ export function SiteNav() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="text-[rgb(28,66,111)] hover:text-[rgb(28,66,111)]/70 transition-colors"
+              className="text-[rgb(28,66,111)] hover:opacity-80 transition-opacity"
             >
-              <Instagram className="h-5 w-5" />
+              <InstagramIcon className="h-5 w-5" />
             </a>
 
             {/* Mobile Menu Toggle Button */}
