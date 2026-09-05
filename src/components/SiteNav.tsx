@@ -58,9 +58,9 @@ export function SiteNav() {
             <Link
               key={l.to}
               to={l.to}
-              className="font-display text-sm tracking-[0.15em] uppercase text-foreground/80 hover:text-foreground transition-colors"
+              className="font-display text-sm tracking-[0.15em] uppercase text-[rgb(28,66,111)]/80 hover:text-[rgb(28,66,111)] transition-colors"
               activeProps={{
-                className: "text-foreground underline underline-offset-8 decoration-1",
+                className: "text-[rgb(28,66,111)] underline underline-offset-8 decoration-1",
               }}
               activeOptions={{ exact: true }}
             >
@@ -75,7 +75,7 @@ export function SiteNav() {
           <div className="relative" ref={langRef}>
             <button
               aria-label="Language selector"
-              className="flex items-center gap-1.5 p-1.5 md:p-2 rounded border border-border/50 hover:bg-accent/10 transition-colors cursor-pointer"
+              className="flex items-center gap-1.5 p-1.5 md:p-2 rounded border border-border/50 hover:bg-accent/10 transition-colors cursor-pointer text-[rgb(28,66,111)]"
               onClick={() => setLangOpen(!langOpen)}
             >
               <Globe className="h-3.5 w-3.5 md:h-4 md:w-4" />
@@ -111,7 +111,7 @@ export function SiteNav() {
           {/* Mobile Menu Toggle Button */}
           <button
             aria-label="Toggle menu"
-            className="md:hidden p-2 text-foreground"
+            className="md:hidden p-2 text-[rgb(28,66,111)]"
             onClick={() => setOpen((v) => !v)}
           >
             {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -133,7 +133,7 @@ export function SiteNav() {
                   <Link
                     key={l.to}
                     to={l.to}
-                    className="font-display text-4xl tracking-tighter text-foreground hover:translate-x-2 transition-transform duration-300"
+                    className="font-display text-4xl tracking-tighter text-[rgb(28,66,111)] hover:translate-x-2 transition-transform duration-300"
                   >
                     {l.label}
                   </Link>
