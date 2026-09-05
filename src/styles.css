@@ -171,11 +171,6 @@
     text-transform: uppercase;
   }
 
-  .font-handwritten {
-    font-family: "Caveat", sans-serif !important;
-    font-weight: 400;
-  }
-
   .mask-artist-name {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
