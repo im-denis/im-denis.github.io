@@ -1,6 +1,6 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useState, useEffect, useRef } from "react";
-import { Menu, X, Globe } from "lucide-react";
+import { Menu, X, Globe, Instagram } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import logo from "@/assets/artist/logo.png";
@@ -108,6 +108,17 @@ export function SiteNav() {
                 )}
               </AnimatePresence>
             </div>
+
+            {/* Instagram Link */}
+            <a
+              href="https://www.instagram.com/denissimon.art/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="text-[rgb(28,66,111)] hover:text-[rgb(28,66,111)]/70 transition-colors"
+            >
+              <Instagram className="h-5 w-5" />
+            </a>
 
             {/* Mobile Menu Toggle Button */}
             <button
