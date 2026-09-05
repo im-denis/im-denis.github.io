@@ -186,10 +186,10 @@
 
   .mask-artist-name {
     background-image:
-      linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("assets/paintings/poster-gallery-mockup.jpg");
+      linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+      url("assets/paintings/poster-gallery.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center 45%;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
