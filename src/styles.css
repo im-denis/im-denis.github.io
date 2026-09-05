@@ -180,6 +180,10 @@
     font-weight: 400;
   }
 
+  .font-script {
+    font-family: "Imperial Script", cursive;
+  }
+
   .mask-artist-name {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
