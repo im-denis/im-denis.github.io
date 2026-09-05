@@ -66,6 +66,7 @@
     "instagram": "Instagram",
     "navigate": "Navegación",
     "imprint": "Aviso legal",
+    "privacy": "Política de privacidad",
     "copyright": "© 2026 Denis Simon. Todos los derechos reservados."
   },
   "imprint": {
@@ -84,6 +85,31 @@
     "disputeText": "La Comisión Europea facilita una plataforma para la resolución de litigios en línea (ODR):",
     "disputeLink": "https://ec.europa.eu/consumers/odr/",
     "disputeNote": "Encontrarás mi dirección de correo electrónico más arriba, en la sección de contacto."
+  },
+  "privacy": {
+    "title": "Política de privacidad - Denis Simon",
+    "description": "Política de privacidad conforme al RGPD para Denis Simon, artista en Oldenburg, Alemania.",
+    "label": "Privacidad",
+    "heading": "Política de privacidad",
+    "controllerTitle": "1. Responsable del tratamiento",
+    "controllerText": "El responsable del tratamiento a efectos del RGPD es Denis Simon, contactable en kontakt@denissimon.de.",
+    "contactTitle": "2. Recogida de datos y contacto",
+    "contactText": "Cuando se pone en contacto con nosotros (p. ej. por correo electrónico), recopilamos datos personales exclusivamente para tramitar su solicitud. El tratamiento se basa en el art. 6, apdo. 1, letra b del RGPD (en consultas relacionadas con contratos) o en el art. 6, apdo. 1, letra f del RGPD (nuestro interés legítimo en tramitar su solicitud).",
+    "orderTitle": "3. Tratamiento de datos para la tramitación de pedidos",
+    "order1": "Para la tramitación del contrato, sus datos se transmiten a la empresa de transporte encargada y al proveedor de servicios de pago (Etsy Payments / Etsy Ireland UC) en la medida en que sea necesario para la entrega y el pago (art. 6, apdo. 1, letra b del RGPD).",
+    "order2": "Si utiliza la función electrónica de desistimiento, los datos necesarios para ello se tratarán para gestionar el desistimiento.",
+    "rightsTitle": "4. Derechos del interesado",
+    "rightsIntro": "Usted tiene los siguientes derechos con respecto a sus datos personales:",
+    "rights": [
+      "Derecho de acceso (art. 15 del RGPD)",
+      "Derecho de rectificación o supresión (arts. 16 y 17 del RGPD)",
+      "Derecho a la limitación del tratamiento (art. 18 del RGPD)",
+      "Derecho a la portabilidad de los datos (art. 20 del RGPD)",
+      "Derecho de oposición al tratamiento (art. 21 del RGPD)",
+      "Derecho a presentar una reclamación ante una autoridad de control (art. 77 del RGPD)"
+    ],
+    "retentionTitle": "5. Duración del almacenamiento",
+    "retentionText": "Los datos personales se eliminan de forma rutinaria una vez que el fin del tratamiento deja de ser aplicable y tras expirar los plazos legales de conservación (p. ej. según el derecho mercantil y tributario)."
   },
   "paintings": {
     "river": "Río",

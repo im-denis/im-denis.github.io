@@ -68,6 +68,9 @@ export function SiteFooter() {
             <Link to="/imprint" className="block hover:underline underline-offset-4">
               {t("footer.imprint")}
             </Link>
+            <Link to="/privacy" className="block hover:underline underline-offset-4">
+              {t("footer.privacy")}
+            </Link>
           </div>
         </div>
 

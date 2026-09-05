@@ -66,13 +66,14 @@
     "instagram": "Instagram",
     "navigate": "Navigation",
     "imprint": "Impressum",
+    "privacy": "Datenschutzhinweis",
     "copyright": "© 2026 Denis Simon. Alle Rechte vorbehalten."
   },
   "imprint": {
     "title": "Rechtlicher Hinweis - Denis Simon",
     "description": "Rechtlicher Hinweis und Kontaktinformationen für Denis Simon, Künstler ansässig in Oldenburg, Deutschland.",
     "label": "Rechtliches",
-    "heading": "Rechtlicher Hinweis",
+    "heading": "Impressum",
     "infoTitle": "Informationen gemäß § 5 DDG",
     "address": "Denis Simon\nSchumacherhof 2b\n26123 Oldenburg\nDeutschland",
     "contactTitle": "Kontakt",
@@ -84,6 +85,31 @@
     "disputeText": "Die Europäische Kommission bietet eine Plattform für die Online-Streitbeilegung (OS):",
     "disputeLink": "https://ec.europa.eu/consumers/odr/",
     "disputeNote": "Die E-Mail-Adresse finden Sie oben im Kontaktbereich."
+  },
+  "privacy": {
+    "title": "Datenschutzhinweis - Denis Simon",
+    "description": "Datenschutzhinweis gemäß DSGVO für Denis Simon, Künstler ansässig in Oldenburg, Deutschland.",
+    "label": "Datenschutz",
+    "heading": "Datenschutzhinweis",
+    "controllerTitle": "1. Verantwortlicher",
+    "controllerText": "Verantwortlicher im Sinne der DSGVO ist Denis Simon, erreichbar unter kontakt@denissimon.de.",
+    "contactTitle": "2. Datenerhebung und Kontaktaufnahme",
+    "contactText": "Wenn Sie mit uns Kontakt aufnehmen (z. B. per E-Mail), erheben wir personenbezogene Daten ausschließlich zum Zweck der Bearbeitung Ihres Anliegens. Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (bei vertragsbezogenen Anfragen) oder Art. 6 Abs. 1 lit. f DSGVO (unser berechtigtes Interesse an der Bearbeitung).",
+    "orderTitle": "3. Datenverarbeitung zur Bestellabwicklung",
+    "order1": "Zur Vertragsabwicklung werden Ihre Daten an das beauftragte Transportunternehmen sowie an den Zahlungsdienstleister (Etsy Payments / Etsy Ireland UC) weitergegeben, soweit dies für die Lieferung und Bezahlung erforderlich ist (Art. 6 Abs. 1 lit. b DSGVO).",
+    "order2": "Sofern Sie die elektronische Widerrufsfunktion nutzen, werden die dafür erforderlichen Daten zur Abwicklung des Widerrufs verarbeitet.",
+    "rightsTitle": "4. Rechte des Betroffenen",
+    "rightsIntro": "Sie haben gegenüber uns folgende Rechte hinsichtlich Ihrer personenbezogenen Daten:",
+    "rights": [
+      "Recht auf Auskunft (Art. 15 DSGVO)",
+      "Recht auf Berichtigung oder Löschung (Art. 16, 17 DSGVO)",
+      "Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)",
+      "Recht auf Datenübertragbarkeit (Art. 20 DSGVO)",
+      "Recht auf Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)",
+      "Recht auf Beschwerde bei einer Aufsichtsbehörde (Art. 77 DSGVO)"
+    ],
+    "retentionTitle": "5. Speicherdauer",
+    "retentionText": "Personenbezogene Daten werden nach Wegfall des Verarbeitungszwecks und nach Ablauf gesetzlicher Aufbewahrungsfristen (z. B. aus Handels- und Steuerrecht) routinemäßig gelöscht."
   },
   "paintings": {
     "river": "Fluss",

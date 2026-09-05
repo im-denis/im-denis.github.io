@@ -66,6 +66,7 @@
     "instagram": "Instagram",
     "navigate": "Navigate",
     "imprint": "Legal Notice",
+    "privacy": "Privacy Policy",
     "copyright": "© 2026 Denis Simon. All rights reserved."
   },
   "imprint": {
@@ -84,6 +85,31 @@
     "disputeText": "The European Commission provides a platform for online dispute resolution (ODR):",
     "disputeLink": "https://ec.europa.eu/consumers/odr/",
     "disputeNote": "You can find my email address in the contact section above."
+  },
+  "privacy": {
+    "title": "Privacy Policy - Denis Simon",
+    "description": "Privacy policy in accordance with the GDPR for Denis Simon, artist based in Oldenburg, Germany.",
+    "label": "Privacy",
+    "heading": "Privacy Policy",
+    "controllerTitle": "1. Controller",
+    "controllerText": "The controller within the meaning of the GDPR is Denis Simon, reachable at kontakt@denissimon.de.",
+    "contactTitle": "2. Data collection and contact",
+    "contactText": "When you contact us (e.g. by e-mail), we collect personal data exclusively for the purpose of handling your request. Processing is based on Art. 6 (1) lit. b GDPR (for contract-related inquiries) or Art. 6 (1) lit. f GDPR (our legitimate interest in handling your request).",
+    "orderTitle": "3. Data processing for order processing",
+    "order1": "For contract processing, your data is passed on to the commissioned transport company and to the payment service provider (Etsy Payments / Etsy Ireland UC) insofar as this is necessary for delivery and payment (Art. 6 (1) lit. b GDPR).",
+    "order2": "If you use the electronic withdrawal function, the data required for this is processed to handle the withdrawal.",
+    "rightsTitle": "4. Rights of the data subject",
+    "rightsIntro": "You have the following rights with regard to your personal data:",
+    "rights": [
+      "Right of access (Art. 15 GDPR)",
+      "Right to rectification or erasure (Art. 16, 17 GDPR)",
+      "Right to restriction of processing (Art. 18 GDPR)",
+      "Right to data portability (Art. 20 GDPR)",
+      "Right to object to processing (Art. 21 GDPR)",
+      "Right to lodge a complaint with a supervisory authority (Art. 77 GDPR)"
+    ],
+    "retentionTitle": "5. Storage duration",
+    "retentionText": "Personal data is routinely deleted once the purpose of processing no longer applies and after statutory retention periods (e.g. under commercial and tax law) have expired."
   },
   "paintings": {
     "river": "River",
