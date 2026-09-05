@@ -55,7 +55,8 @@
     ],
     "ctaHeading": "Erzähl mir\nvon deinem Projekt.",
     "ctaText": "Schick mir eine Nachricht mit Details zu deiner Vision – Motiv, Referenzen, Maße und Zeitrahmen. Ich melde mich mit einem Angebot und den nächsten Schritten bei dir.",
-    "ctaButton": "Anfrage senden →"
+    "ctaButton": "Anfrage senden →",
+    "ctaOr": "oder"
   },
   "footer": {
     "heading": "Lass uns\netwas Echtes erschaffen.",

@@ -103,12 +103,23 @@ function CommissionsPage() {
             <p className="text-lg md:text-xl text-foreground/85 leading-relaxed mb-8">
               {t("commissions.ctaText")}
             </p>
-            <a
-              href="mailto:kontakt@denissimon.de"
-              className="font-display text-sm tracking-[0.15em] uppercase bg-foreground text-background px-8 py-4 hover:bg-foreground/85 transition-colors inline-block"
-            >
-              {t("commissions.ctaButton")}
-            </a>
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-4">
+              <a
+                href="mailto:kontakt@denissimon.de"
+                className="font-display text-sm tracking-[0.15em] uppercase bg-foreground text-background px-8 py-4 hover:bg-foreground/85 transition-colors inline-block"
+              >
+                {t("commissions.ctaButton")}
+              </a>
+              <span className="text-lg md:text-xl text-foreground/85">
+                {t("commissions.ctaOr")}{" "}
+                <a
+                  href="mailto:kontakt@denissimon.de"
+                  className="underline decoration-muted-foreground/30 hover:decoration-foreground"
+                >
+                  kontakt@denissimon.de
+                </a>
+              </span>
+            </div>
           </motion.div>
         </div>
       </section>
