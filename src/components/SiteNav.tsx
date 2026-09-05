@@ -4,6 +4,7 @@ import { Menu, X, Globe } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import signature from "@/assets/artist/signature.png";
+import logo from "@/assets/artist/logo.png";
 
 export function SiteNav() {
   const [open, setOpen] = useState(false);
@@ -45,7 +46,8 @@ export function SiteNav() {
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/60">
       <div className="mx-auto max-w-[1600px] px-6 md:px-12 py-5 md:py-7 flex items-center justify-between relative">
         {/* Logo */}
-        <Link to="/" className="h-8 md:h-10 flex items-center">
+        <Link to="/" className="h-8 md:h-10 flex items-center gap-3">
+          <img src={logo} alt="Denis Simon" className="h-full object-contain" />
           <img src={signature} alt="Denis Simon signature" className="h-full object-contain" />
         </Link>
 
