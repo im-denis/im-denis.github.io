@@ -3,7 +3,6 @@ import { useState, useEffect, useRef } from "react";
 import { Menu, X, Globe } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import signature from "@/assets/artist/signature.png";
 import logo from "@/assets/artist/logo.png";
 
 export function SiteNav() {
@@ -15,7 +14,7 @@ export function SiteNav() {
   const { t, i18n } = useTranslation();
 
   const links = [
-    { to: "/", label: t("nav.work") },
+    { to: "/#works", label: t("nav.work") },
     { to: "/vita", label: t("nav.about") },
     { to: "/commissions", label: t("nav.commissions") },
   ];
@@ -45,10 +44,12 @@ export function SiteNav() {
   return (
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/60">
       <div className="mx-auto max-w-[1600px] px-6 md:px-12 py-5 md:py-7 flex items-center justify-between relative">
-        {/* Logo */}
-        <Link to="/" className="h-8 md:h-10 flex items-center gap-3">
-          <img src={logo} alt="Denis Simon" className="h-full object-contain" />
-          <img src={signature} alt="Denis Simon signature" className="h-full object-contain" />
+        {/* Logo and Name */}
+        <Link to="/" className="h-8 md:h-10 flex items-center gap-2 md:gap-3">
+          <img src={logo} alt="D" className="h-full object-contain" />
+          <span className="font-handwritten font-bold text-blue-900 dark:text-blue-100 text-xs md:text-sm tracking-wide">
+            enis Simon
+          </span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -69,15 +70,15 @@ export function SiteNav() {
         </nav>
 
         {/* Actions Area (Language + Mobile Toggle) */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2 md:gap-4">
           {/* Language Selector (Always visible) */}
           <div className="relative" ref={langRef}>
             <button
               aria-label="Language selector"
-              className="flex items-center gap-2 p-2 rounded border border-border/50 hover:bg-accent/10 transition-colors cursor-pointer"
+              className="flex items-center gap-1.5 p-1.5 md:p-2 rounded border border-border/50 hover:bg-accent/10 transition-colors cursor-pointer"
               onClick={() => setLangOpen(!langOpen)}
             >
-              <Globe className="h-4 w-4" />
+              <Globe className="h-3.5 w-3.5 md:h-4 md:w-4" />
               <span className="text-xs font-medium uppercase">{i18n.language.toUpperCase()}</span>
             </button>
 

@@ -177,7 +177,9 @@
   }
 
   .mask-artist-name {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('assets/paintings/title-text-background.jpg');
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("assets/paintings/title-text-background.jpg");
     background-size: cover;
     background-position: center;
     -webkit-background-clip: text;
@@ -187,4 +189,3 @@
     transition: background-position 0.3s ease;
   }
 }
-

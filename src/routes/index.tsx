@@ -65,7 +65,7 @@ function Index() {
       </section>
 
       {/* Works index header */}
-      <section className="px-6 md:px-12 pb-10 md:pb-16">
+      <section id="works" className="px-6 md:px-12 pb-10 md:pb-16">
         <div className="mx-auto max-w-[1600px] flex items-end justify-between border-t border-border pt-6">
           <div className="font-mono-caps text-xs text-muted-foreground">
             {t("home.latestWorks")}
