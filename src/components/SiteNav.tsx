@@ -15,8 +15,8 @@ export function SiteNav() {
 
   const links = [
     { to: "/#works", label: t("nav.work") },
-    { to: "/vita", label: t("nav.about") },
     { to: "/commissions", label: t("nav.commissions") },
+    { to: "/vita", label: t("nav.about") },
   ];
 
   const changeLanguage = (lng: string) => {
