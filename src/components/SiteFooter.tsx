@@ -75,7 +75,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-border/60 flex flex-col md:flex-row justify-between items-start md:items-center gap-2 text-xs font-mono-caps text-muted-foreground">
-          <span>{t("footer.copyright")}</span>
+          <span>{t("footer.copyright", { year: new Date().getFullYear() })}</span>
         </div>
       </div>
     </footer>

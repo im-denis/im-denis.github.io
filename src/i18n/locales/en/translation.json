@@ -67,7 +67,7 @@
     "navigate": "Navigate",
     "imprint": "Legal Notice",
     "privacy": "Privacy Policy",
-    "copyright": "© 2026 Denis Simon. All rights reserved."
+    "copyright": "© {{year}} Denis Simon. All rights reserved."
   },
   "imprint": {
     "title": "Legal Notice - Denis Simon",
