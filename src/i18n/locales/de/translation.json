@@ -66,7 +66,7 @@
     "instagram": "Instagram",
     "navigate": "Navigation",
     "imprint": "Impressum",
-    "privacy": "Datenschutzhinweis",
+    "privacy": "Datenschutzerklärung",
     "copyright": "© 2026 Denis Simon. Alle Rechte vorbehalten."
   },
   "imprint": {
@@ -87,10 +87,10 @@
     "disputeNote": "Die E-Mail-Adresse finden Sie oben im Kontaktbereich."
   },
   "privacy": {
-    "title": "Datenschutzhinweis - Denis Simon",
-    "description": "Datenschutzhinweis gemäß DSGVO für Denis Simon, Künstler ansässig in Oldenburg, Deutschland.",
+    "title": "Datenschutzerklärung - Denis Simon",
+    "description": "Datenschutzerklärung gemäß DSGVO für Denis Simon, Künstler ansässig in Oldenburg, Deutschland.",
     "label": "Datenschutz",
-    "heading": "Datenschutzhinweis",
+    "heading": "Datenschutzerklärung",
     "controllerTitle": "1. Verantwortlicher",
     "controllerText": "Verantwortlicher im Sinne der DSGVO ist Denis Simon, erreichbar unter kontakt@denissimon.de.",
     "contactTitle": "2. Datenerhebung und Kontaktaufnahme",
