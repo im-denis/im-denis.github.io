@@ -62,6 +62,10 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+@theme {
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
 :root {
   --radius: 0.25rem;
   /* Museum off-white canvas */
