@@ -63,7 +63,7 @@
 }
 
 @theme {
-  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-serif: "Lora", Georgia, "Times New Roman", serif;
 }
 
 :root {
